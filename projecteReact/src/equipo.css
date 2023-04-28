@@ -1,0 +1,52 @@
+.equipo {
+    width: 100%;
+    padding-top: 160px;
+    min-height: 83vh;
+}
+
+.square{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    margin-top: 5%;
+}
+
+.evento-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.evento-individual {
+    width: 44%;
+    height: auto;
+    color: #FFFFFF;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto_esdeveniment {
+    width: 100%;
+    max-height: 400px;
+    position: relative;
+}
+
+.div-info-eve {
+    position: absolute;
+    opacity: 0;
+}
+
+.foto_esdeveniment:hover {
+    opacity: 0.4;
+    transition: opacity 0.4s ease-in-out;   
+
+}
+
+.foto_esdeveniment:hover+.div-info-eve {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
