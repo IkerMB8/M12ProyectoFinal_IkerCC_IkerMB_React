@@ -37,7 +37,7 @@ export default function Header() {
     <>
       <nav className="navegador">
         <div className="left">
-            <Link to="/"><img className='imagenLogo' src='/public/chr.png'></img> </Link>
+          <Link to="/"><img className='imagenLogo' src='/public/chr.png'></img> </Link>
         </div>
         <div className="center">
           {/* <Link to="/about">About </Link> */}
