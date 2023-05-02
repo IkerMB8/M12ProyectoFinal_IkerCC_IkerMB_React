@@ -4,6 +4,7 @@ import Header from './layouts/Header';
 import Footer from "./layouts/Footer";
 import Equipo from "./Equipo";
 import Salon from "./Salon";
+import Colecciones from "./Colecciones";
 import NotFound from "./NotFound";
 // import Contacta from "./Contacta";
 // import Map from "./Map;"
@@ -27,13 +28,14 @@ export default function App() {
             <Routes>
               <Route path='*' element={<NotFound />} />
               <Route path="/" element={<></>} />
-              <Route path='/feed' element={<></>}></Route>
+              <Route path='/feed' element={<></>} />
               {/* <Route path='/productes' element={<Productes></Productes>}></Route> */}
-              <Route path='/cart' element={<></>}></Route>
-              <Route path='/citas' element={<></>}></Route>
-              <Route path='/salon' element={<Salon/>}></Route>
+              <Route path='/cart' element={<></>} />
+              <Route path='/citas' element={<></>} />
+              <Route path='/colecciones' element={<Colecciones></Colecciones>} />
+              <Route path='/salon' element={<Salon></Salon>} />
               {/* <Route path='/contacta' element={<Contacta></Contacta>}></Route> */}
-              <Route path='/equipo' element={<Equipo/>}></Route>
+              <Route path='/equipo' element={<Equipo/>} />
               {/* <Route path="/about" element={<About />} /> */}
             </Routes>
             <Footer />
