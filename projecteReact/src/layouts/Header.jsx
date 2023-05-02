@@ -37,7 +37,7 @@ export default function Header() {
     <>
       <nav className="navegador">
         <div className="left">
-          <Link to="/"><img className='imagenLogo' src='/public/chr.png'></img> </Link>
+          <Link to="/"><img className='imagenLogo' src='/chr.png'></img> </Link>
         </div>
         <div className="center">
           {/* <Link to="/about">About </Link> */}
@@ -46,6 +46,7 @@ export default function Header() {
           <Link to="/equipo">EL EQUIPO</Link>
           <Link to="/servicios">SERVICIOS</Link>
           <Link to="/salon">EL SALÓN</Link>
+          <Link to="/premios">PREMIOS</Link>
           <Link to="/colecciones">COLECCIONES</Link>
           <Link to="/chracademy">CHR ACADEMY</Link>
           <Link to="/feed">FEED</Link>
@@ -65,6 +66,7 @@ export default function Header() {
               <span key={v}> ( {v} ) </span>
             ) ) }
           </p>
+          <Link to="/loginregister"><i class="bi bi-person-fill"></i></Link>
         </div>
       </nav>
     </>
