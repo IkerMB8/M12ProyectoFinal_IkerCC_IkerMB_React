@@ -1,6 +1,7 @@
 import React from "react";
 import './loginregister.css';
 import { useForm } from "react-hook-form";
+import useLogin from "../hooks/useLogin";
 
 export default function Login() {
     const { doLogin, error, setError } = useLogin();  
@@ -10,16 +11,16 @@ export default function Login() {
     return (
         <> 
             <div>
-                <img  class="imgFondo" src="/salon.jpg"></img>
-                <div class="boxLogin">
-                    <div class="grad">
-                        <div class="header">
+                <img className="imgFondo" src="/salon.jpg"></img>
+                <div className="boxLogin">
+                    <div className="grad">
+                        <div className="header">
                             <img className='imagenLogo' src='/chr.png'></img>
                         </div>
                     </div>
                     <br/>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div class="login">
+                        <div className="login">
                             <input type="text" placeholder="Email" {...register("email", {
                                 required: "Aquest camp és obligatori",
                                 minLength: {
