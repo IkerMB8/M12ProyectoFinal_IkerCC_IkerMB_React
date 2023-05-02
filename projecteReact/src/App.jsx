@@ -23,7 +23,7 @@ export default function App() {
   return (
     <>
       <UserContext.Provider value= { { usuari, setUsuari, authToken, setAuthToken, idUsuari, setIdUsuari }}>
-        {authToken ? (
+        {/* {authToken ? ( */}
           <> 
             <Header />
             <Routes>
@@ -41,9 +41,9 @@ export default function App() {
             </Routes>
             <Footer />
            </>
-        ) : (
-          <LoginRegister />
-        )}
+        {/*) : (
+           <LoginRegister />
+        )} */}
       </UserContext.Provider>
     </>
   )
