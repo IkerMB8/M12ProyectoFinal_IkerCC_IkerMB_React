@@ -2,63 +2,39 @@ import  React  from 'react';
 import './contacta.css';
 import google from 'google-maps-react'
 
-export default function Contacta() {
-
-  function initialize() {
-    var mapOptions = {
-      center: new google.maps.LatLng(28.1823295, -82.352912),
-      zoom: 9,
-      mapTypeId: google.maps.MapTypeId.HYBRID,
-      scrollwheel: false,
-      draggable: false,
-      panControl: true,
-      zoomControl: true,
-      mapTypeControl: true,
-      scaleControl: true,
-      streetViewControl: true,
-      overviewMapControl: true,
-      rotateControl: true,
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-  
+export default function Contacta() { 
 
   return (
     <>
-      <div class="contact" id="contact">
-        <div class="container">
-          <div class="col-md-offset-1 col-md-10">
-            <h2>Contact Me<i class="fa fa-paper-plane-o"></i></h2>
-            <div id="map-canvas"></div>
-          </div>
-          <form method="post" action="contact.php" name="contactform" id="contactform">
-            <div class="col-md-offset-1 col-md-5">
-              <fieldset>
-                <input name="name" type="text" id="name" size="30" placeholder="Name"/>
-                <br/>
-                <input name="email" type="text" id="email" size="30" placeholder="Email"/>
-                <br/>
-                <input name="phone" type="text" id="phone" size="30" placeholder="Phone"/>
-                <br/>
-                <input name="human" type="text" id="human" size="30" placeholder="Prove your not a robot... What is 2+2?"/>
-                <br/>
-              </fieldset>
+      <section class="form_wrap">
+        <section class="cantact_info">
+            <section class="info_title">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.8254124243344!2d1.7176336767890341!3d41.22557497132093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a386fd0cf9c929%3A0xc95528801531d62c!2sChristian%20Rios%20Hairdressing%20%26%20Barber!5e0!3m2!1sca!2ses!4v1683127870362!5m2!1sca!2ses" width="400" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
+                <p><span class="fa fa-mobile"></span> Carrer dels Picapedrers, 27, 08800 Vilanova i la Geltrú, Barcelona</p>
+            </section>
+        </section>
+        <form action="" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+              <label for="names">Nombres *</label>
+              <input type="text" id="names"/>
+
+              <label for="phone">Telefono / Celular</label>
+              <input type="text" id="phone"/>
+
+              <label for="email">Correo electronico *</label>
+              <input type="text" id="email"/>
+
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje"></textarea>
+              <input type="button" value="Enviar Mensaje" id="btnSend"/>
             </div>
-            <div class="col-md-5">
-              <fieldset>
-                <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
-              </fieldset>
-            </div>
-            <div class="col-md-offset-1 col-md-10">
-              <fieldset>
-                <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
-              </fieldset>
-            </div>
-          </form>
-        </div>
-      </div>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        </form>
+      </section>
     </>
   );
 }
