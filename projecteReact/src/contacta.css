@@ -1,26 +1,3 @@
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-
-:focus{
-    outline: none;
-}
-
-body{
-    background: #DBDBDB;
-    font-family: 'Open sans';
-}
-
 /* FORMULARIO =================================== */
 
 .form_wrap{
@@ -46,14 +23,14 @@ body{
     top: 0;
     left: 0;
 
-    background: #4091EC;
+    background: #79959E;
     opacity: 0.9;
 }
 
 .cantact_info{
     width: 38%;
     position: relative;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +40,34 @@ body{
     background-size: cover;
     background-position: center center;
 
+}
+
+.infoContacta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContacta p{
+    margin: 0;
+}
+
+.info_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+
+}
+
+.h2Mapa{
+    color: white;
+    margin: 0;
+}
+
+.hrMapa{
+    color: white;
+    width: 80%;
 }
 
 .info_title,
@@ -88,7 +93,6 @@ body{
 .info_items p{
     display: flex;
     align-items: center;
-
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -137,7 +141,6 @@ form.form_contact textarea{
     border: none;
     border-bottom: 2px solid #D1D1D1;
 
-    font-family: 'Open sans';
 	color: #5A5A5A;
 	font-size: 14px;
 	font-weight: 400;
@@ -151,7 +154,7 @@ form.form_contact textarea{
 
 form.form_contact input[type="button"]{
     width: 180px;
-	background: #4091EC;
+	background: #79959E;
 	padding: 10px;
 	border: none;
 	border-radius: 25px;
@@ -159,14 +162,17 @@ form.form_contact input[type="button"]{
     align-self: flex-end;
 
     color: #fff;
-	font-family: 'Open sans';
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
 }
 
+.titContacta{
+    color: black;
+}
+
 form.form_contact input[type="button"]:hover{
-    background: #3371B6;
+    background: #79959E;
 }
 
 /* Ventana de errores*/
@@ -194,7 +200,6 @@ form.form_contact input[type="button"]:hover{
 
 .mensaje_modal h3{
     text-align: center;
-    font-family: 'Ubuntu';
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -215,7 +220,6 @@ form.form_contact input[type="button"]:hover{
 
 .mensaje_modal p:before{
   content: "\f00d";
-  font-family: FontAwesome;
   display: inline-block;
   color: #E25151;
   margin-right: 8px;
