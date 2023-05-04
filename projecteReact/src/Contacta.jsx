@@ -38,7 +38,7 @@ DOMINGO Y LUNES: CERRADO</p>
             <input type="text" id="email"/>
 
             <label for="mensaje">Mensaje *</label>
-            <textarea id="mensaje"></textarea>
+            <textarea className='textoMsj' id="mensaje"></textarea>
             <input type="button" value="Enviar Mensaje" id="btnSend"/>
           </div>
         </form>

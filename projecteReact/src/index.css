@@ -55,6 +55,61 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+.divVideo__titulo{
+  color: #838383;
+  font-weight: 800;
+  position: absolute;
+  opacity: 0.4;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 45em;
+}
+
+.divVideo__titulo_h2{
+  color: white;
+  position: absolute;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 6em;
+}
+
+.divVideo__btnGif{
+  color: white;
+  background-color: #1a1830;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 15px;
+}
+.divVideo__btnGif:hover{
+  filter: invert(100%);
+}
+.divVideo{
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Christian-Rios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divVideo div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divVideo p{
+  position: absolute;
+  top: 80%;
+  color: rgba(255, 255, 255, 0.733);
+
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

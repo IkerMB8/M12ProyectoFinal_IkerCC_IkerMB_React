@@ -5,6 +5,10 @@
     overflow: hidden;
     pointer-events: none;
 }
+
+.h1Salon{
+    color: black;
+}
   
 .carousel-item {
     --items: 10;

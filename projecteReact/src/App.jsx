@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import LoginRegister  from './auth/LoginRegister';
+import Home from './Home';
 import Header from './layouts/Header';
 import Footer from "./layouts/Footer";
 import Equipo from "./Equipo";
@@ -7,6 +8,7 @@ import Salon from "./Salon";
 import Colecciones from "./Colecciones";
 import NotFound from "./NotFound";
 import Contacta from "./Contacta";
+
 // import Productes from "./Productes";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router-dom";
@@ -27,7 +29,7 @@ export default function App() {
             <Header />
             <Routes>
               <Route path='*' element={<NotFound />} />
-              <Route path="/" element={<></>} />
+              <Route path="/" element={<Home></Home>} />
               <Route path='/feed' element={<></>} />
               {/* <Route path='/productes' element={<Productes></Productes>}></Route> */}
               <Route path='/cart' element={<></>} />

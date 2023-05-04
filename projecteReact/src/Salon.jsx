@@ -99,6 +99,7 @@ export default function Equipo() {
     return (
         <> 
             <div class="carousel">
+                <h1 className='h1Salon'>EL SALÓN</h1>
                 <div class="carousel-item">
                     <div class="carousel-box">
                         <div class="num">01</div>
