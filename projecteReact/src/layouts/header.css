@@ -166,7 +166,7 @@ a{
     img{page-break-inside:avoid;}
     img{max-width:100%!important;}
     }
-    #site-header-inner{position:relative;}
+    #site-header-inner{position:relative; }
     #site-logo{float:left;height:100%;display:table;}
     #site-logo #site-logo-inner{display:table-cell;vertical-align:middle;height:74px;}
     #site-logo #site-logo-inner a{background-color:transparent!important;}

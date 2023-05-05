@@ -26,7 +26,7 @@ export default function Header() {
       <div id="site-header-inner" class="clr container">
         <div id="site-logo" class="clr" itemscope="" itemtype="https://schema.org/Brand">
           <div id="site-logo-inner" class="clr">
-            <a href="https://www.christianrioshaircouture.com/" class="custom-logo-link" rel="home" aria-current="page"><img width="389" height="316" src="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png" class="custom-logo" alt="Christian Ríos Hair Couture" decoding="async" srcset="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png 389w, https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black-300x244.png 300w" sizes="(max-width: 389px) 100vw, 389px" /></a>
+            <a href="/" class="custom-logo-link" rel="home" aria-current="page"><img width="389" height="316" src="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png" class="custom-logo" alt="Christian Ríos Hair Couture" decoding="async" srcset="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png 389w, https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black-300x244.png 300w" sizes="(max-width: 389px) 100vw, 389px" /></a>
           </div>
         </div>
         <div id="site-navigation-wrap" class="clr">
