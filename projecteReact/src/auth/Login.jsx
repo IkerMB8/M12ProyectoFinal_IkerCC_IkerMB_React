@@ -3,24 +3,22 @@ import './loginregister.css';
 import { useForm } from "react-hook-form";
 import useLogin from "../hooks/useLogin";
 
-export default function Login() {
+export default function Login({setCanvi}) {
     const { doLogin, error, setError } = useLogin();  
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => doLogin(data);
 
     return (
         <> 
-            <div>
-                <img className="imgFondo" src="/salon.jpg"></img>
+            <div className="bg-imagen">
+                {/* <img className="imgFondo" src="/salon.jpg"></img> */}
                 <div className="boxLogin">
-                    <div className="grad">
-                        <div className="header">
+                    <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 10px 10px 0px'}}>
+                        <div className="grad">
                             <img className='imagenLogo' src='/chr.png'></img>
                         </div>
-                    </div>
-                    <br/>
-                    <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="login">
+                        <form className="login" onSubmit={handleSubmit(onSubmit)}>
+                            
                             <input type="text" placeholder="Email" {...register("email", {
                                 required: "Aquest camp és obligatori",
                                 minLength: {
@@ -49,13 +47,17 @@ export default function Login() {
                                 },
                                 pattern: {
                                     value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/,
-                                    message: "La contraseá tiene que contener al menos una minúscula, una mayuscula, i un número" 
+                                    message: "La contraseña tiene que contener al menos una minúscula, una mayuscula, i un número" 
                             }})}/>
                             {errors.password ? <div className="error">{errors.password.message}</div> : <></>}
                             <br/>
                             <input type="submit" value="Login"/>
-                        </div>
-                    </form>
+                            
+                        </form>
+                    </div>
+                    <div>
+                        <p>¿No tienes cuenta? <a href="#" onClick={() => {setCanvi(false);}} > Regístrate</a></p>
+                    </div>
                 </div>
             </div>
         </>

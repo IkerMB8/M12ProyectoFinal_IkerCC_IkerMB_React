@@ -8,31 +8,47 @@ body{
     width: 70%;
 }
 
+.bg-imagen .imagenLogo{
+	width: 100%;
+	height: 100%;
+}
 .boxLogin{
     background-color: white;
     width: 30%;
-    height: 20%;
     position: absolute;
-    top: calc(60% - 85px);
-	left: calc(50% - 255px);
 	z-index: 2;
     border-radius: 4px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 
 .grad{
-	width: auto;
-	height: auto;
+	width: 40%;
 	z-index: 1;
 	opacity: 0.9;
 }
 
-.header{
-	position: absolute;
-	top: calc(50% - 85px);
-	left: calc(50% - 255px);
-	z-index: 2;
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.boxLogin{
+		width: 50%;
+	}
 }
 
+/* Tablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+	.boxLogin{
+		width: 65%;
+	}
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+	.boxLogin{
+		width: 80%;
+	}
+}
 .header div{
 	float: left;
 	color: #fff;
@@ -45,18 +61,20 @@ body{
 	color: #5379fa !important;
 }
 
-.login{
+/* .login{
 	position: absolute;
 	top: calc(50% - 75px);
 	left: calc(50% - 50px);
 	height: 150px;
 	width: 350px;
-	padding: 10px;
 	z-index: 2;
+} */
+.login{
+	width: 60%;
 }
 
 .login input[type=text]{
-	width: 250px;
+	width: 95%;
 	height: 30px;
 	background: rgb(150, 150, 150);
 	border: 2px solid rgba(0, 0, 0, 0.267);
@@ -69,7 +87,7 @@ body{
 }
 
 .login input[type=password]{
-	width: 250px;
+	width: 95%;
 	height: 30px;
 	background: rgb(150, 150, 150);
 	border: 2px solid rgba(0, 0, 0, 0.267);
@@ -125,4 +143,24 @@ body{
 
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
+}
+
+.boxLogin a, .boxLogin p{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 8px;
+	color: black;
+}
+
+.bg-imagen{
+	background-image: url("/salonblur.png");
+	height: 80vh; 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 130px;
 }

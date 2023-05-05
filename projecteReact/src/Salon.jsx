@@ -107,60 +107,60 @@ export default function Equipo() {
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">02</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">02</div>
                         <img src="/salon2.jpg" />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">03</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">03</div>
                         <img
                             src="/salon3.jpg"
                         />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">04</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">04</div>
                         <img src="/salon4.jpg" />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">05</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">05</div>
                         <img src="/salon5.jpg" />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">06</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">06</div>
                         <img src="/salon6.jpg" />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">07</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">07</div>
                         <img src="/salon7.jpg" />
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">08</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">08</div>
                         <img src="/salon8.jpg" />
                     </div>
                 </div>
             </div>
 
-            <div class="cursor"></div>
-            <div class="cursor cursor2"></div>
+            <div className="cursor"></div>
+            <div className="cursor cursor2"></div>
         </>
     )
 }
