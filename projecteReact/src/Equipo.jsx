@@ -10,43 +10,43 @@ export default function Equipo() {
                     <div className='square'>
                         <div className='evento-individual chris'>
                             <img src="../Christian-Rios.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayChris">
-                                <div class="chris2">
+                            <div className="overlayChris">
+                                <div className="chris2">
                                     <h1>
                                         CHRISTIAN RÍOS
                                     </h1>
-                                    <div class="socials mt-20">
-                                        <a href="https://www.facebook.com/christian.riostorres.1" target='_blank'><i class="bi bi-facebook"></i></a>
-                                        <a href="https://www.instagram.com/khrystyan28/" target='_blank'><i class="bi bi-instagram"></i></a>
+                                    <div className="socials mt-20">
+                                        <a href="https://www.facebook.com/christian.riostorres.1" target='_blank'><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www.instagram.com/khrystyan28/" target='_blank'><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className='evento-individual claudio'>
                             <img src="../Claudio.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayClaudio">
-                                <div class="claudio2">
+                            <div className="overlayClaudio">
+                                <div className="claudio2">
                                     <h1>
                                         CLAUDIO GUIRAO  
                                     </h1>
-                                    <div class="socials mt-20">
-                                        <a href="#" target='_blank'><i class="bi bi-facebook" target='_blank'></i></a>
-                                        <a href="https://www.instagram.com/claudiogap_/" target='_blank'><i class="bi bi-instagram"></i></a>
+                                    <div className="socials mt-20">
+                                        <a href="#" target='_blank'><i className="bi bi-facebook" target='_blank'></i></a>
+                                        <a href="https://www.instagram.com/claudiogap_/" target='_blank'><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className='evento-individual jana'>
                             <img src="../Jana.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayJana">
-                                <div class="jana2">
+                            <div className="overlayJana">
+                                <div className="jana2">
                                     <h1>
                                         JANA
                                     </h1>
-                                    <div class="socials mt-20">
-                                        <a href="#" target='_blank'><i class="bi bi-facebook"></i></a>
-                                        <a href="#" target='_blank'><i class="bi bi-twitter"></i></a>
-                                        <a href="#" target='_blank'><i class="bi bi-instagram"></i></a>
+                                    <div className="socials mt-20">
+                                        <a href="#" target='_blank'><i className="bi bi-facebook"></i></a>
+                                        <a href="#" target='_blank'><i className="bi bi-twitter"></i></a>
+                                        <a href="#" target='_blank'><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
