@@ -5,7 +5,8 @@ export default function Contacta() {
 
   return (
     <>
-      <h1 className='titContacta'>CONTACTA CON NOSOTROS</h1>
+    <div className='positioning'>
+      <h1 className='titContacta' id="linkContacta">CONTACTA CON NOSOTROS</h1>
       <section class="form_wrap">
         <section class="cantact_info">
           <section class="info_title">
@@ -19,7 +20,7 @@ export default function Contacta() {
             <hr className='hrMapa'></hr>
             <div>
               <h2 className='h2Mapa'>HORARIOS</h2>
-              <p>DE MARTES A VIERNES: 9.30H - 20H
+              <p>DE MARTES A VIERNES: 9.30H - 13.30H / 15H - 20H
 SÁBADO: 9H - 14.30H
 DOMINGO Y LUNES: CERRADO</p>
             </div>
@@ -43,6 +44,7 @@ DOMINGO Y LUNES: CERRADO</p>
           </div>
         </form>
       </section>
+    </div>
     </>
   );
 }

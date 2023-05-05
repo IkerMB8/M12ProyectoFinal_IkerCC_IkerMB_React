@@ -37,22 +37,22 @@ export default function Header() {
     <>
       <nav className="navegador">
         <div className="left">
-          <Link to="/"><img className='imagenLogo' src='/chr.png'></img> </Link>
+          <a href="#/"><img className='imagenLogo' src='/chr.png'></img></a>
         </div>
         <div className="center">
           {/* <Link to="/about">About </Link> */}
         </div>
         <div className="right">
-          <Link to="/equipo">EL EQUIPO</Link>
-          <Link to="/servicios">SERVICIOS</Link>
-          <Link to="/salon">EL SALÓN</Link>
-          <Link to="/premios">PREMIOS</Link>
-          <Link to="/colecciones">COLECCIONES</Link>
-          <Link to="/chracademy">CHR ACADEMY</Link>
-          <Link to="/feed">FEED</Link>
-          <Link to="/citas">CITAS</Link>
-          <Link to="/productes">PRODUCTES</Link>
-          <Link to="/contacta">CONTACTA</Link>
+          <a href="#linkEquipo">EL EQUIPO</a>
+          <a href="#linkServicios">SERVICIOS</a>
+          <a href="#linkSalon">EL SALÓN</a>
+          <a href="#linkPremios">PREMIOS</a>
+          <a href="#linkColecciones">COLECCIONES</a>
+          <a href="#linkCHR">CHR ACADEMY</a>
+          <a href="/feed">FEED</a>
+          <a href="/citas">CITAS</a>
+          <a href="/productos">PRODUCTOS</a>
+          <a href="#linkContacta">CONTACTA</a>
           <div className="search-container">
             <form>
               <input type="text" placeholder="Search..." name="search"/>
