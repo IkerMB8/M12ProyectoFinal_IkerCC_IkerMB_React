@@ -62,7 +62,7 @@ button:focus-visible {
   position: absolute;
   opacity: 0.4;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   font-size: 45em;
 }
 
@@ -71,20 +71,10 @@ button:focus-visible {
   position: absolute;
   font-weight: 800;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8%;
   font-size: 6em;
 }
 
-.divVideo__btnGif{
-  color: white;
-  background-color: #1a1830;
-  border: 1px solid lightgray;
-  padding: 10px;
-  border-radius: 15px;
-}
-.divVideo__btnGif:hover{
-  filter: invert(100%);
-}
 .divVideo{
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Christian-Rios.jpg);
@@ -92,6 +82,7 @@ button:focus-visible {
   background-repeat: no-repeat;
   background-position: center;
   height: 1000px;
+  margin-top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +96,7 @@ button:focus-visible {
 
 .divVideo p{
   position: absolute;
-  top: 80%;
+  top: 85%;
   color: rgba(255, 255, 255, 0.733);
 
 }
