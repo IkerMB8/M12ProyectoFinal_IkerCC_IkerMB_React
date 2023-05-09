@@ -176,6 +176,7 @@ form.form_contact input[type="button"]{
 .titContacta{
     color: black;
     font-weight: 800;
+    margin-top: 0;
 }
 
 form.form_contact input[type="button"]:hover{

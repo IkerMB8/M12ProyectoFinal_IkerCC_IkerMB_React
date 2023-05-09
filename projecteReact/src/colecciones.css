@@ -51,8 +51,15 @@
     width: 90%;
   }
 
+.positioning{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
 .colecciones{
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     color: black;
@@ -62,6 +69,7 @@
 .colecciones h1{
     color: black;
     margin: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 5em;
 }
 
