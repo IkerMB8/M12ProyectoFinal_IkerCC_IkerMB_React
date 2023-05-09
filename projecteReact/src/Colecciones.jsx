@@ -3,7 +3,8 @@ import './colecciones.css';
 export default function Colecciones() {
     return (
         <>
-            <div className='colecciones'>
+        <div className='positioning'>
+            <div className='colecciones' id="linkColecciones">
                 <h3>PERRUQUERÍA EN EL GARRAF</h3>
                 <h1>COLECCIONES</h1>
                 <br></br>
@@ -247,6 +248,7 @@ export default function Colecciones() {
                 <br></br>
                 <br></br>
             </div>
+        </div>
         </>
     );
 };

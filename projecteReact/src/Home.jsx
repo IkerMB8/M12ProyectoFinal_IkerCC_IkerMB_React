@@ -1,6 +1,6 @@
 import './index.css';
 import Equipo from './Equipo';
-// import Servicios from './Servicios';
+import Servicios from './Servicios';
 import Salon from './Salon';
 // import Premios from './Premios';
 import Colecciones from './Colecciones';
@@ -14,7 +14,7 @@ export default function Home() {
     
     return (
         <> 
-            <div class="divVideo">
+            <div class="divVideo" id='/'>
                 <div>
                     <h1 class="divVideo__titulo">CHR</h1>
                     <h2 class="divVideo__titulo_h2">CHRISTIAN RÍOS HAIR</h2>
@@ -22,7 +22,7 @@ export default function Home() {
                 </div>
             </div>
             <Equipo></Equipo>
-            {/* <Servicios></Servicios> */}
+            <Servicios></Servicios>
             <Salon></Salon>
             {/* <Premios></Premios> */}
             <Colecciones></Colecciones>
