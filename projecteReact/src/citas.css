@@ -1,0 +1,43 @@
+.citas{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.citas h1{
+    color: black;
+}
+.citas label{
+    color: black;
+}
+.citas a:hover{color:#0056b3;text-decoration:underline;}
+.citas a:not([href]){color:inherit;text-decoration:none;}
+.citas a:not([href]):hover{color:inherit;text-decoration:none;}
+.citas label{display:inline-block;margin-bottom:.5rem;}
+.citas input,select{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+.citas input{overflow:visible;}
+.citas select{text-transform:none;}
+.citas select{word-wrap:normal;}
+.citas .form-control{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media (prefers-reduced-motion:reduce){
+    .citas .form-control{transition:none;}
+}
+.citas .form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.citas .form-control::placeholder{color:#6c757d;opacity:1;}
+.citas .form-control:disabled{background-color:#e9ecef;opacity:1;}
+.citas .form-group{margin-bottom:1rem;}
+.citas .btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media (prefers-reduced-motion:reduce){
+    .citas .btn{transition:none;}
+}
+.citas .btn:hover{color:#212529;text-decoration:none;}
+.citas .btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.citas .btn:disabled{opacity:.65;}
+.citas .mt-2{margin-top:.5rem!important;}
+.citas .pt-4{padding-top:1.5rem!important;}
+.citas .text-center{text-align:center!important;}
+@media print{
+ *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+}
+.citas a{color:rgb(104, 203, 241);}
+.citas a:hover{color:#a2badb;;   text-decoration:none;}
+.citas .btnBooking{border:0px solid!important;color:#ffffff!important;background-color:#78F3E2!important;}
+.citas .btnBooking:hover{color:#78F3E2!important;background-color:white!important;}

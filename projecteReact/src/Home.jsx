@@ -14,10 +14,10 @@ export default function Home() {
     
     return (
         <> 
-            <div class="divVideo">
+            <div className="divVideo">
                 <div>
-                    <h1 class="divVideo__titulo">CHR</h1>
-                    <h2 class="divVideo__titulo_h2">CHRISTIAN RÍOS HAIR</h2>
+                    <h1 className="divVideo__titulo">CHR</h1>
+                    <h2 className="divVideo__titulo_h2">CHRISTIAN RÍOS HAIR</h2>
                     <p>Las últimas tendencias para tu look de la mano de los mejores estilistas de Vilanova y la Geltrú</p>
                 </div>
             </div>
