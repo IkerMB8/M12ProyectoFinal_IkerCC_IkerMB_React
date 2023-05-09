@@ -29,37 +29,37 @@ export default function Header() {
             <a href="/" className="custom-logo-link" rel="home" aria-current="page"><img width="389" height="316" src="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png" className="custom-logo" alt="Christian Ríos Hair Couture" decoding="async" srcSet="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png 389w, https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black-300x244.png 300w" sizes="(max-width: 389px) 100vw, 389px" /></a>
           </div>
         </div>
-        <div id="site-navigation-wrap" className="clr">
-          <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
-            <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
-              <li id="menu-item-187" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-187">
-                <a href="#linkEquipo" className="menu-link">
-                  <span className="text-wrap">El equipo</span>
+        <div id="site-navigation-wrap" class="clr">
+          <nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+            <ul id="menu-principal" class="main-menu dropdown-menu sf-menu">
+              <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187">
+                <a href="/#linkEquipo" class="menu-link">
+                  <span class="text-wrap">El equipo</span>
                 </a>
               </li>
-              <li id="menu-item-667" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-667">
-                <a href="#linkServicios" className="menu-link">
-                  <span className="text-wrap">Servicios</span>
+              <li id="menu-item-667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-667">
+                <a href="/#linkServicios" class="menu-link">
+                  <span class="text-wrap">Servicios</span>
                 </a>
               </li>
-              <li id="menu-item-189" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
-                <a href="#linkSalon" className="menu-link">
-                  <span className="text-wrap">El Salón</span>
+              <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
+                <a href="/#linkSalon" class="menu-link">
+                  <span class="text-wrap">El Salón</span>
                 </a>
               </li>
-              <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                <a href="#linkPremios" className="menu-link">
-                  <span className="text-wrap">Premios</span>
+              <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
+                <a href="/#linkPremios" class="menu-link">
+                  <span class="text-wrap">Premios</span>
                 </a>
               </li>
-              <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                <a href="#linkColecciones" className="menu-link">
-                  <span className="text-wrap">Colecciones</span>
+              <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
+                <a href="/#linkColecciones" class="menu-link">
+                  <span class="text-wrap">Colecciones</span>
                 </a>
               </li>
-              <li id="menu-item-504" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
-                <a href="#linkCHR" className="menu-link">
-                  <span className="text-wrap">CHR Academy</span>
+              <li id="menu-item-504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
+                <a href="/#linkCHR" class="menu-link">
+                  <span class="text-wrap">CHR Academy</span>
                 </a>
               </li>
               <li id="menu-item-530" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530">
@@ -77,9 +77,9 @@ export default function Header() {
                   <span className="text-wrap">Productos</span>
                 </a>
               </li>
-              <li id="menu-item-190" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
-                <a href="#contacto" className="menu-link">
-                  <span className="text-wrap">Contacta</span>
+              <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
+                <a href="/#contacto" class="menu-link">
+                  <span class="text-wrap">Contacta</span>
                 </a>
               </li>
               <li id="menu-item-190" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">

@@ -98,7 +98,7 @@ export default function Equipo() {
 
     return (
         <> 
-            <div className="carousel">
+            <div class="carousel" id="linkSalon">
                 <h1 className='h1Salon'>EL SALÓN</h1>
                 <div className="carousel-item">
                     <div className="carousel-box">

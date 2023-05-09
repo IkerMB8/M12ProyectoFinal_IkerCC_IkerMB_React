@@ -3,16 +3,16 @@ import './equipo.css'
 export default function Equipo() {
     return (
         <> 
-            <div className='pagina'>
+            <div className='pagina' id="linkEquipo">
                 <div className='equipo'>
-                    <h1>NUESTRO EQUIPO</h1>
+                    <h1 >NUESTRO EQUIPO</h1>
                     <h2>PELUQUERÍA EN VILANOVA I LA GELTRÚ</h2>
                     <div className='square'>
                         <div className='evento-individual chris'>
                             <img src="../Christian-Rios.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayChris">
-                                <div className="chris2">
-                                    <h1>
+                            <div class="overlayChris">
+                                <div class="chris2">
+                                    <h1 className='names'>
                                         CHRISTIAN RÍOS
                                     </h1>
                                     <div className="socials mt-20">
@@ -24,9 +24,9 @@ export default function Equipo() {
                         </div>
                         <div className='evento-individual claudio'>
                             <img src="../Claudio.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayClaudio">
-                                <div className="claudio2">
-                                    <h1>
+                            <div class="overlayClaudio">
+                                <div class="claudio2">
+                                    <h1 className='names'>
                                         CLAUDIO GUIRAO  
                                     </h1>
                                     <div className="socials mt-20">
@@ -38,9 +38,9 @@ export default function Equipo() {
                         </div>
                         <div className='evento-individual jana'>
                             <img src="../Jana.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayJana">
-                                <div className="jana2">
-                                    <h1>
+                            <div class="overlayJana">
+                                <div class="jana2">
+                                    <h1 className='names'>
                                         JANA
                                     </h1>
                                     <div className="socials mt-20">
