@@ -77,7 +77,6 @@ button:focus-visible {
 }
 
 .divVideo{
-  margin-top: 7%;
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Christian-Rios.jpg);
   background-size: cover;

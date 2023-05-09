@@ -54,7 +54,6 @@
 .colecciones{
     width: 100%;
     display: flex;
-    font-family: math;
     align-items: center;
     color: black;
     flex-direction: column;
@@ -63,7 +62,6 @@
 .colecciones h1{
     color: black;
     margin: 0;
-    font-family: math;
     font-size: 5em;
 }
 
