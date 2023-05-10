@@ -1,6 +1,7 @@
 .servicios_div_1{
     width: 59%;
-    height: 702px;
+    gap: 4%;
+    height: 600px;
     display: flex;
     background: #fff;
     flex-direction: column;
@@ -15,7 +16,8 @@
 
 .servicios_div_2{
     width: 59%;
-    height: 702px;
+    gap: 4%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -30,14 +32,42 @@
 
 .h1_Servicios{
     color: rgba(255, 255, 255, 0.705);
-    height: 70px;
-    width: 20%;    
-    background-color: rgba(36, 36, 36, 0.699);
+    height: 125px;
+    margin: 0;
     text-shadow: 1px 1px 1px rgb(128, 128, 128), 1px 2px 1px rgb(128, 128, 128), 1px 3px 1px rgb(128, 128, 128), 1px 4px 1px rgb(128, 128, 128), 1px 5px 1px rgb(128, 128, 128), 1px 6px 1px rgb(114, 114, 114), 1px 7px 1px rgb(128, 128, 128), 1px 8px 1px rgb(121, 121, 121), 1px 9px 1px rgb(139, 139, 139), 1px 18px 6px rgb(16 16 16 / 40%), 1px 30px 60px rgb(16 16 16 / 40%);
 }
 
-.div_Servicios{
-    width: 90%;
-    height: 75%;
+.img_Servicios{
+    height: 375px;
+    width: 35%;
+}
+
+.bg_serv{
+    height: 100%;
+    display: flex;
+    padding: 65px;
     background-color: rgba(36, 36, 36, 0.699);
+    align-items: center;
+}
+
+.div_Servicios_izq{
+    width: 100%;
+    padding-left: 45px;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    height: 67%;
+}
+
+.div_Servicios_der{
+    width: 100%;
+    padding-right: 45px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    height: 67%;
+}
+
+.h1_Servicios_Span{
+    font-size: 2em;
 }
