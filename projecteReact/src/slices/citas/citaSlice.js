@@ -7,7 +7,9 @@ const initialState = {
     ID_Cliente: 0,
     ID_Trabajador: 0,
     ID_Servicio: 0,
-    page: 0
+    page: 0,
+    Success: "",
+    Error: ""
 }
 
 export const citaSlice = createSlice({
