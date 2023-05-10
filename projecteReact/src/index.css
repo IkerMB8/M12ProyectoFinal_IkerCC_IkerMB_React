@@ -62,7 +62,7 @@ button:focus-visible {
   position: absolute;
   opacity: 0.4;
   margin: 0;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   font-size: 45em;
 }
 
@@ -71,10 +71,120 @@ button:focus-visible {
   position: absolute;
   font-weight: 800;
   margin: 0;
-  margin-bottom: 8%;
+  margin-bottom: 1%;
   font-size: 6em;
-  margin-bottom: 10%;
 }
+
+@media only screen and (max-width: 1510px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 40em;
+  }
+}
+
+@media only screen and (max-width: 1350px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 35em;
+  }
+}
+
+@media only screen and (max-width: 1184px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 30em;
+  }
+
+  .divVideo__titulo_h2{
+    color: white;
+    position: absolute;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1%;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 1184px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 25em;
+  }
+
+  .divVideo__titulo_h2{
+    color: white;
+    position: absolute;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1%;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 850px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 20em;
+  }
+
+  .divVideo__titulo_h2{
+    color: white;
+    position: absolute;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1%;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 680px)  {
+  .divVideo__titulo{
+    color: #838383;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.4;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 15em;
+  }
+
+  .divVideo__titulo_h2{
+    color: white;
+    position: absolute;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1%;
+    font-size: 3em;
+  }
+}
+
+
+
 
 .divVideo{
   background-color: black;
@@ -96,7 +206,7 @@ button:focus-visible {
 
 .divVideo p{
   position: absolute;
-  top: 85%;
+  top: 92%;
   color: rgba(255, 255, 255, 0.733);
 
 }
