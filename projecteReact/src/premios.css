@@ -1,0 +1,67 @@
+
+.container_Premios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+  
+ul.slider li img{
+    height: 300px;
+    object-fit: cover;
+}
+  
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+  
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+  
+.menu_Premios{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+  
+.menu_Premios li{
+    display: inline-block;
+    text-align: center;
+}
+  
+.menu_Premios li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 100%;
+}

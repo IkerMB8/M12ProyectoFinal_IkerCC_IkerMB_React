@@ -39,32 +39,32 @@ export default function Header() {
             <nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" class="main-menu dropdown-menu sf-menu">
                 <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187">
-                  <a href="#linkEquipo" class="menu-link">
+                  <a href="/#linkEquipo" class="menu-link">
                     <span class="text-wrap">El equipo</span>
                   </a>
                 </li>
                 <li id="menu-item-667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-667">
-                  <a href="#linkServicios" class="menu-link">
+                  <a href="/#linkServicios" class="menu-link">
                     <span class="text-wrap">Servicios</span>
                   </a>
                 </li>
                 <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
-                  <a href="#linkSalon" class="menu-link">
+                  <a href="/#linkSalon" class="menu-link">
                     <span class="text-wrap">El Salón</span>
                   </a>
                 </li>
                 <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                  <a href="#linkPremios" class="menu-link">
+                  <a href="/#linkPremios" class="menu-link">
                     <span class="text-wrap">Premios</span>
                   </a>
                 </li>
                 <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                  <a href="#linkColecciones" class="menu-link">
+                  <a href="/#linkColecciones" class="menu-link">
                     <span class="text-wrap">Colecciones</span>
                   </a>
                 </li>
                 <li id="menu-item-504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
-                  <a href="#linkCHR" class="menu-link">
+                  <a href="/#linkCHR" class="menu-link">
                     <span class="text-wrap">CHR Academy</span>
                   </a>
                 </li>
@@ -84,7 +84,7 @@ export default function Header() {
                   </a>
                 </li>
                 <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
-                  <a href="#contacto" class="menu-link">
+                  <a href="/#linkContacta" class="menu-link">
                     <span class="text-wrap">Contacta</span>
                   </a>
                 </li>

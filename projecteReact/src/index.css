@@ -85,6 +85,10 @@ button:focus-visible {
     margin-bottom: 5%;
     font-size: 40em;
   }
+  .names{
+    color: white;
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width: 1350px)  {
@@ -99,26 +103,6 @@ button:focus-visible {
   }
 }
 
-@media only screen and (max-width: 1184px)  {
-  .divVideo__titulo{
-    color: #838383;
-    font-weight: 800;
-    position: absolute;
-    opacity: 0.4;
-    margin: 0;
-    margin-bottom: 5%;
-    font-size: 30em;
-  }
-
-  .divVideo__titulo_h2{
-    color: white;
-    position: absolute;
-    font-weight: 800;
-    margin: 0;
-    margin-bottom: 1%;
-    font-size: 3em;
-  }
-}
 
 @media only screen and (max-width: 1184px)  {
   .divVideo__titulo{
@@ -138,6 +122,30 @@ button:focus-visible {
     margin: 0;
     margin-bottom: 1%;
     font-size: 3em;
+  }
+
+  
+
+  .names{
+    color: white;
+    font-size: 2em;
+  }
+
+  .p_Equipo{
+    font-size: 0.9em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 928px)  {
+  .names{
+    color: white;
+    font-size: 1.8em;
+  }
+
+  .p_Equipo{
+    font-size: 0.8em;
+    margin: 0;
   }
 }
 

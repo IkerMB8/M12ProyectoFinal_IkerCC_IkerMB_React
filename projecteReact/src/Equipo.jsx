@@ -15,6 +15,7 @@ export default function Equipo() {
                                     <h1 className='names'>
                                         CHRISTIAN RÍOS
                                     </h1>
+                                    <p className='p_Equipo'>Fundador y director de la firma. Formado entre otros, con Miguel Griñó en BCN, en Stick Art Studio de Make Up Forever y en las academias de Raffel Pages. Amplía experiencia y conocimiento a través de diversos cursos: coloración en Italia con Gogem, vanguardia con Anne Veck o corte en Londres con Roberto Masciave, entre otros.</p>
                                     <div className="socials mt-20">
                                         <a href="https://www.facebook.com/christian.riostorres.1" target='_blank'><i className="bi bi-facebook"></i></a>
                                         <a href="https://www.instagram.com/khrystyan28/" target='_blank'><i className="bi bi-instagram"></i></a>
@@ -29,8 +30,8 @@ export default function Equipo() {
                                     <h1 className='names'>
                                         CLAUDIO GUIRAO  
                                     </h1>
+                                    <p className='p_Equipo'>Asistente de Dirección. Champunier especialista en tratamientos capilares.</p>
                                     <div className="socials mt-20">
-                                        <a href="#" target='_blank'><i className="bi bi-facebook" target='_blank'></i></a>
                                         <a href="https://www.instagram.com/claudiogap_/" target='_blank'><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>
@@ -44,8 +45,6 @@ export default function Equipo() {
                                         JANA
                                     </h1>
                                     <div className="socials mt-20">
-                                        <a href="#" target='_blank'><i className="bi bi-facebook"></i></a>
-                                        <a href="#" target='_blank'><i className="bi bi-twitter"></i></a>
                                         <a href="#" target='_blank'><i className="bi bi-instagram"></i></a>
                                     </div>
                                 </div>

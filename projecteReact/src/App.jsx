@@ -6,6 +6,7 @@ import Footer from "./layouts/Footer";
 import Equipo from "./Equipo";
 import Salon from "./Salon";
 import Colecciones from "./Colecciones";
+import Premios from "./Premios";
 import NotFound from "./NotFound";
 import Contacta from "./Contacta";
 
@@ -34,6 +35,7 @@ export default function App() {
               <Route path='/citas' element={<></>} />
               <Route path='/colecciones' element={<Colecciones></Colecciones>} />
               <Route path='/salon' element={<Salon></Salon>} />
+              <Route path='/premios' element={<Premios></Premios>} />
               <Route path='/contacta' element={<Contacta></Contacta>}></Route>
               <Route path='/equipo' element={<Equipo/>} />
               <Route path='/cuenta' element={<Account/>} />

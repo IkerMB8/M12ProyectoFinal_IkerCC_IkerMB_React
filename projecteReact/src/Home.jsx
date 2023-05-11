@@ -2,7 +2,7 @@ import './index.css';
 import Equipo from './Equipo';
 import Servicios from './Servicios';
 import Salon from './Salon';
-// import Premios from './Premios';
+import Premios from './Premios';
 import Colecciones from './Colecciones';
 // import CHRAcademy from './CHRAcademy';
 // import Feed from './Feed';
@@ -24,7 +24,7 @@ export default function Home() {
             <Equipo></Equipo>
             <Servicios></Servicios>
             <Salon></Salon>
-            {/* <Premios></Premios> */}
+            <Premios></Premios>
             <Colecciones></Colecciones>
             {/* <CHRAcademy></CHRAcademy> */}
             {/* <Feed></Feed> */}

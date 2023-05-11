@@ -55,6 +55,13 @@ h2{
     position: relative;
 }
 
+
+.p_Equipo{
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
 .overlayChris {
     background-color: rgba(20,20,20,.7);
     position: absolute;
@@ -102,9 +109,12 @@ h2{
 .chris2 {
     /* opacity: 0; */
     position: absolute;
-    top: 25%;
     overflow: hidden;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
     z-index: 2;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -115,9 +125,12 @@ h2{
 .claudio2 {
     /* opacity: 0; */
     position: absolute;
-    top: 25%;
     overflow: hidden;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
     z-index: 2;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -128,9 +141,12 @@ h2{
 .jana2 {
     /* opacity: 0; */
     position: absolute;
-    top: 25%;
     overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
     width: 100%;
+    height: 100%;
     z-index: 2;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -186,4 +202,31 @@ h2{
 }
 .evento-individual:hover .overlayJana {
     opacity: 1;
+}
+
+
+@media only screen and (max-width: 1184px)  {
+
+    .overlayChris{
+        background-color: rgba(20,20,20,.7);
+        position: absolute;
+        width: 35.1%;
+        height: 47%;
+        transition: all .2s ease-in-out;
+    }
+
+    .overlayClaudio{
+        background-color: rgba(20,20,20,.7);
+        position: absolute;
+        width: 35.1%;
+        height: 47%;
+        transition: all .2s ease-in-out;
+    }
+
+    .square{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
