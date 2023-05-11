@@ -42,7 +42,7 @@ export default function Equipo() {
                             <div class="overlayJana">
                                 <div class="jana2">
                                     <h1 className='names'>
-                                        JANA
+                                        JANA FEIXAS
                                     </h1>
                                     <div className="socials mt-20">
                                         <a href="#" target='_blank'><i className="bi bi-instagram"></i></a>

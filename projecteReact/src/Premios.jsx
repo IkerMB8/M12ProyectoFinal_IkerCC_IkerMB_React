@@ -1,124 +1,248 @@
-import  React  from 'react';
-import './premios.css';
+import React from 'react';
+import { useSnapCarousel } from 'react-snap-carousel';
 
-export default function Premios() { 
-
+const Premios = () => {
+    const { scrollRef, pages, activePageIndex, next, prev, goTo } =
+    useSnapCarousel();
   return (
     <>
-    <h1>PREMIOS Y NOMINACIONES</h1>
-    <div id="linkPremios" class="container_Premios">
-        <ul class="slider">
-            <li id="slide1">
-                <img src="/premio1.jpg"/>
-            </li>
-            <li id="slide2">
-                <img src="/premio2.jpg"/>
-            </li>
-            <li id="slide3">
-                <img src="/premio3.jpg"/>                
-            </li>
-            <li id="slide4">
-                <img src="/premio4.jpg"/>
-            </li>
-            <li id="slide5">
-                <img src="/premio5.jpg"/>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide7">
-                <img src='/premio7.jpg'></img>
-            </li>
-            <li id="slide8">
-                <img src='/premio8.jpg'></img>
-            </li>
-            <li id="slide9">
-                <img src='/premio9.jpg'></img>
-            </li>
-            <li id="slide10">
-                <img src='/premio10.jpg'></img>
-            </li>
-            <li id="slide11">
-                <img src='/premio11.jpg'></img>
-            </li>
-            <li id="slide12">
-                <img src='/premio12.jpg'></img>
-            </li>
-            <li id="slide13">
-                <img src='/premio13.jpg'></img>
-            </li>
-            {/* <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li>
-            <li id="slide6">
-                <img src='/premio6.jpg'></img>
-            </li> */}
-        </ul>
-        
-        <ul class="menu_Premios">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-            <li>
-                <a href="#slide4">4</a>
-            </li>
-            <li>
-                <a href="#slide5">5</a>
-            </li>
-            <li>
-                <a href="#slide6">6</a>
-            </li>
-            <li>
-                <a href="#slide7">7</a>
-            </li>
-            <li>
-                <a href="#slide8">8</a>
-            </li>
-            <li>
-                <a href="#slide9">9</a>
-            </li>
-            <li>
-                <a href="#slide10">10</a>
-            </li>
-            <li>
-                <a href="#slide11">11</a>
-            </li>
-            <li>
-                <a href="#slide12">12</a>
-            </li>
-            <li>
-                <a href="#slide13">13</a>
-            </li>
-        </ul>
-    </div>
+    <h1 id='linkPremios'>PREMIOS Y NOMINACIONES</h1>
+    <ul
+    ref={scrollRef}
+    style={{
+        display: 'flex',
+        gap: '10px',
+        overflow: 'auto',
+        scrollSnapType: 'x mandatory'
+    }}
+    >
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio1.jpg"/>
+        </li>
 
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio2.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio3.jpg"/>      
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio4.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio5.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio6.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio7.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio8.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio9.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio10.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio11.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio12.jpg"/>
+        </li>
+
+        <li
+        style={{
+            backgroundColor: 'aqua',
+            fontSize: '50px',
+            width: '250px',
+            height: '250px',
+            flexShrink: 0,
+            color: '#fff',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}
+        >
+            <img src="/premio13.jpg"/>
+        </li>
+    </ul>
+    <div>
+        {activePageIndex + 1} / {pages.length}
+    </div>
+    <button onClick={() => prev()}>Prev</button>
+    <button onClick={() => next()}>Next</button>
+    <ol style={{ display: 'flex', justifyContent: 'center', padding: '0'}}>
+    {pages.map((_, i) => (
+        <li key={i}>
+        <button
+            style={i === activePageIndex ? { opacity: 0.5 } : {}}
+            onClick={() => goTo(i)}
+        >
+            {i + 1}
+        </button>
+        </li>
+    ))}
+    </ol>
     </>
   );
-}
+};
+
+export default Premios;
