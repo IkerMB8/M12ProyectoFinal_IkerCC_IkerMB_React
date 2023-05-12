@@ -4,7 +4,7 @@ import Servicios from './Servicios';
 import Salon from './Salon';
 import Premios from './Premios';
 import Colecciones from './Colecciones';
-// import CHRAcademy from './CHRAcademy';
+import CHRAcademy from './CHRAcademy';
 // import Feed from './Feed';
 // import Citas from './Citas';
 // import Productes from './Productes';
@@ -26,7 +26,7 @@ export default function Home() {
             <Salon></Salon>
             <Premios></Premios>
             <Colecciones></Colecciones>
-            {/* <CHRAcademy></CHRAcademy> */}
+            <CHRAcademy></CHRAcademy>
             {/* <Feed></Feed> */}
             {/* <Citas></Citas> */}
             {/* <Productes></Productes> */}

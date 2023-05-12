@@ -61,7 +61,7 @@ body,#root {
     padding: 0px;
 }
 
-a{
+.menu-link a{
     color: black !important;
     font-weight: 600 !important;
     padding: 5px;
