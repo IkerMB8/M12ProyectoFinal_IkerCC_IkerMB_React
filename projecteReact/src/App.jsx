@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Account  from './auth/Account';
 import Home from './Home';
 import Header from './layouts/Header';
@@ -14,12 +14,19 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import { UserContext } from "./userContext";
+import { getServicios, getTrabajadores } from "./slices/citas/thunks";
+import { useDispatch } from "react-redux";
 
 export default function App() {
 
   let [authToken, setAuthToken] = useState("");
   let [usuari, setUsuari] = useState("");
   let [idUsuari, setIdUsuari] = useState("");
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getServicios());
+    dispatch(getTrabajadores());
+  }, []);
 
   return (
     <>

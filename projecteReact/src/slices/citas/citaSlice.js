@@ -9,7 +9,9 @@ const initialState = {
     ID_Servicio: 0,
     page: 0,
     Success: "",
-    Error: ""
+    Error: "",
+    Servicios: [],
+    Trabajadores: []
 }
 
 export const citaSlice = createSlice({
@@ -29,17 +31,29 @@ export const citaSlice = createSlice({
             state.ID_Cliente = action.payload;
         },
         setIDTrabajador: (state,action) => {
-            state.ID_Especialista = action.payload;
+            state.ID_Trabajador = action.payload;
         },
         setIDServicio: (state,action) => { 
             state.ID_Servicio = action.payload;
         },
         setPage: (state,action) => {
             state.page = action.payload;
+        },
+        setError: (state,action) => {
+            state.Error = action.payload;
+        },
+        setSuccess: (state,action) => {
+            state.Success = action.payload;
+        },
+        setServicios: (state,action) => {
+            state.Servicios = action.payload;
+        },
+        setTrabajadores: (state,action) => {
+            state.Trabajadores = action.payload;
         }
     }
 });
 
-export const { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage } = citaSlice.actions;
+export const { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores } = citaSlice.actions;
 
 export default citaSlice.reducer
