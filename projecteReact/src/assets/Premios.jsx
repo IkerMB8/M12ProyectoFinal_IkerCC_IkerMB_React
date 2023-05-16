@@ -6,8 +6,8 @@ export default function Premios() {
   return (
     <>
     <h1>PREMIOS Y NOMINACIONES</h1>
-    {/* <div id="linkPremios" class="container_Premios">
-        <ul class="slider">
+    {/* <div id="linkPremios" className="container_Premios">
+        <ul className="slider">
             <li id="slide1">
                 <img src="/premio1.jpg"/>
             </li>
@@ -50,7 +50,7 @@ export default function Premios() {
             
         </ul>
         
-        <ul class="menu_Premios">
+        <ul className="menu_Premios">
             <li>
                 <a href="#slide1">1</a>
             </li>

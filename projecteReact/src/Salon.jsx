@@ -106,11 +106,11 @@ export default function Equipo() {
 
     return (
         <> 
-            <div class="carousel" id="linkSalon">
+            <div className="carousel" id="linkSalon">
                 <h1 className='h1Salon'>EL SALÓN</h1>
-                <div class="carousel-item">
-                    <div class="carousel-box">
-                        <div class="num">01</div>
+                <div className="carousel-item">
+                    <div className="carousel-box">
+                        <div className="num">01</div>
                         <img className='img_Salon' src="/salon.jpg" />
                     </div>
                 </div>

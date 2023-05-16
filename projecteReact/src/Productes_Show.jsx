@@ -10,7 +10,7 @@ export default function Productes() {
                 </div>
 
                 <div className='mid_show'>
-                    <div class="card-artista card-artista0"></div>
+                    <div className="card-artista card-artista0"></div>
                 </div>
 
                 <div className='right_show'>

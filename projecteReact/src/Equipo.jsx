@@ -10,8 +10,8 @@ export default function Equipo() {
                     <div className='square'>
                         <div className='evento-individual chris'>
                             <img src="../Christian-Rios.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayChris">
-                                <div class="chris2">
+                            <div className="overlayChris">
+                                <div className="chris2">
                                     <h1 className='names'>
                                         CHRISTIAN RÍOS
                                     </h1>
@@ -25,8 +25,8 @@ export default function Equipo() {
                         </div>
                         <div className='evento-individual claudio'>
                             <img src="../Claudio.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayClaudio">
-                                <div class="claudio2">
+                            <div className="overlayClaudio">
+                                <div className="claudio2">
                                     <h1 className='names'>
                                         CLAUDIO GUIRAO  
                                     </h1>
@@ -39,8 +39,8 @@ export default function Equipo() {
                         </div>
                         <div className='evento-individual jana'>
                             <img src="../Jana.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div class="overlayJana">
-                                <div class="jana2">
+                            <div className="overlayJana">
+                                <div className="jana2">
                                     <h1 className='names'>
                                         JANA FEIXAS
                                     </h1>

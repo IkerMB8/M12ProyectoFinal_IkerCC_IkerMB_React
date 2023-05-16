@@ -30,7 +30,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio1.jpg"/>
+                <img className="img_Premios" src="/premio1.jpg"/>
             </li>
 
             <li
@@ -46,7 +46,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio2.jpg"/>
+                <img className="img_Premios" src="/premio2.jpg"/>
             </li>
 
             <li
@@ -62,7 +62,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio3.jpg"/>      
+                <img className="img_Premios" src="/premio3.jpg"/>      
             </li>
 
             <li
@@ -78,7 +78,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio4.jpg"/>
+                <img className="img_Premios" src="/premio4.jpg"/>
             </li>
 
             <li
@@ -94,7 +94,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio5.jpg"/>
+                <img className="img_Premios" src="/premio5.jpg"/>
             </li>
 
             <li
@@ -110,7 +110,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio6.jpg"/>
+                <img className="img_Premios" src="/premio6.jpg"/>
             </li>
 
             <li
@@ -126,7 +126,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio7.jpg"/>
+                <img className="img_Premios" src="/premio7.jpg"/>
             </li>
 
             <li
@@ -142,7 +142,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio8.jpg"/>
+                <img className="img_Premios" src="/premio8.jpg"/>
             </li>
 
             <li
@@ -158,7 +158,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio9.jpg"/>
+                <img className="img_Premios" src="/premio9.jpg"/>
             </li>
 
             <li
@@ -174,7 +174,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio10.jpg"/>
+                <img className="img_Premios" src="/premio10.jpg"/>
             </li>
 
             <li
@@ -190,7 +190,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio11.jpg"/>
+                <img className="img_Premios" src="/premio11.jpg"/>
             </li>
 
             <li
@@ -206,7 +206,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio12.jpg"/>
+                <img className="img_Premios" src="/premio12.jpg"/>
             </li>
 
             <li
@@ -222,7 +222,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio13.jpg"/>
+                <img className="img_Premios" src="/premio13.jpg"/>
             </li>
 
             <li
@@ -238,7 +238,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio14.jpg"/>
+                <img className="img_Premios" src="/premio14.jpg"/>
             </li>
 
             <li
@@ -254,7 +254,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio15.jpg"/>
+                <img className="img_Premios" src="/premio15.jpg"/>
             </li>
 
             <li
@@ -270,7 +270,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio16.jpg"/>
+                <img className="img_Premios" src="/premio16.jpg"/>
             </li>
 
             <li
@@ -286,7 +286,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio17.jpg"/>
+                <img className="img_Premios" src="/premio17.jpg"/>
             </li>
 
             <li
@@ -302,7 +302,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio18.jpg"/>
+                <img className="img_Premios" src="/premio18.jpg"/>
             </li>
 
             <li
@@ -318,7 +318,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio19.jpg"/>
+                <img className="img_Premios" src="/premio19.jpg"/>
             </li>
 
             <li
@@ -334,7 +334,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio20.jpg"/>
+                <img className="img_Premios" src="/premio20.jpg"/>
             </li>
 
             <li
@@ -350,7 +350,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio21.jpg"/>
+                <img className="img_Premios" src="/premio21.jpg"/>
             </li>
 
             <li
@@ -366,7 +366,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio22.jpg"/>
+                <img className="img_Premios" src="/premio22.jpg"/>
             </li>
 
             <li
@@ -382,7 +382,7 @@ const Premios = () => {
                 alignItems: 'center'
             }}
             >
-                <img class="img_Premios" src="/premio23.jpg"/>
+                <img className="img_Premios" src="/premio23.jpg"/>
             </li>
         </ul>
         

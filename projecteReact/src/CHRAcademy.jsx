@@ -23,15 +23,15 @@ export default function CHRAcademy() {
                     </div>
 
                     <div className='abajoCHR'>                      
-                        <ul class="boxCHR">
-                            <li class="flip-container">
-                                <div class="flipper">
-                                    <div class="front">
+                        <ul className="boxCHR">
+                            <li className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
                                         <h2>THRILOGY</h2>
                                         <p>CORTE, MODA Y COLOR</p>
                                         <p>Unas sesiones pensadas para satisfacer a todos aquellos peluqueros que que desean conocer cuáles son las tendencias anuales de moda más importantes de la temporada, y cómo aplicarlas tanto en corte, color y texturas. Por tanto, el contenido se va actualizando cada año en base a las tendencias más punteras.</p>
                                     </div>
-                                    <div class="back">
+                                    <div className="back">
                                         <p><span className='bold'>Duración: </span>2 días (domingo y lunes)</p>
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
@@ -42,14 +42,14 @@ export default function CHRAcademy() {
                             </li>
                         </ul>
 
-                        <ul class="boxCHR">
-                            <li class="flip-container">
-                                <div class="flipper">
-                                    <div class="front">
+                        <ul className="boxCHR">
+                            <li className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
                                         <h2>ESSENTIAL M</h2>
                                         <p>Essential M es la formación perfecta para todos aquellos profesionales que quieran mejorar sus conocimientos de peluquería masculina. Durante la sesión se presentará la última colección masculina de Christian Ríos y se trabajarán las técnicas, conocimientos y habilidades necesarios para llevar a cabo un trabajo de vanguardia que haga que el profesional despunte y que de esta forma se diferencie de su competencia.</p>
                                     </div>
-                                    <div class="back">
+                                    <div className="back">
                                         <p><span className='bold'>Duración: </span>1 día (lunes)</p>
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
@@ -60,14 +60,14 @@ export default function CHRAcademy() {
                             </li>
                         </ul>
 
-                        <ul class="boxCHR">
-                            <li class="flip-container">
-                                <div class="flipper">
-                                    <div class="front">
+                        <ul className="boxCHR">
+                            <li className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
                                         <h2>ESSENTIAL W</h2>
                                         <p>Essential W es la formación perfecta para todos aquellos profesionales que quieran mejorar sus conocimientos de peluquería femenina. Durante la sesión se presentará la última colección femenina de Christian Ríos y se trabajarán las técnicas, conocimientos y habilidades necesarios para llevar a cabo un trabajo de vanguardia que haga que el profesional despunte y se diferencie de su competencia.</p>
                                     </div>
-                                    <div class="back">
+                                    <div className="back">
                                         <p><span className='bold'>Duración: </span>1 día (lunes)</p>
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
@@ -78,14 +78,14 @@ export default function CHRAcademy() {
                             </li>
                         </ul>
 
-                        <ul class="boxCHR">
-                            <li class="flip-container">
-                                <div class="flipper">
-                                    <div class="front">
+                        <ul className="boxCHR">
+                            <li className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
                                         <h2>ESSENTIAL BLOND'S</h2>
                                         <p>La excelencia de los rubios, a  tu alcance en pocas horas. En primer lugar, Essential Blond's es una formación de peluquería tanto femenina  como masculina dedicada a trabajos de rubios: fondos de decoloración, alturas de tonos y matices adecuados para cada decoloración global. Para continuar, durante la sesión se tratarán  las técnicas más comerciales (balayage, melting, contouring, etc.), pero también las más editoriales aplicables a trabajos más creativos y de moda.</p>
                                     </div>
-                                    <div class="back">
+                                    <div className="back">
                                         <p><span className='bold'>Duración: </span>1 día (lunes)</p>
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>

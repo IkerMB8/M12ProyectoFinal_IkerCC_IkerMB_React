@@ -13,7 +13,7 @@ export default function Home() {
     
     return (
         <> 
-            <div class="divVideo" id='/'>
+            <div className="divVideo" id='/'>
                 <div>
                     <h1 className="divVideo__titulo">CHR</h1>
                     <h2 className="divVideo__titulo_h2">CHRISTIAN RÍOS HAIR</h2>

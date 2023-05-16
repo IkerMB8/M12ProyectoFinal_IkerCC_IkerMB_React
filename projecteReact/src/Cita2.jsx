@@ -37,13 +37,13 @@ export default function Citas2() {
                 </div>
             ))}
             
-            <div class="row py-4">
-                <div class="col">
-                    <div class="text-center">
+            <div className="row py-4">
+                <div className="col">
+                    <div className="text-center">
                         <input id="especialistaId" name="especialistaId" type="hidden" value="702" />
-                        <a class="btn btn-success btn-large" style={{color:"white"}} onClick={() => dispatch(crearCita(authToken))}>Confirmar</a>
+                        <a className="btn btn-success btn-large" style={{color:"white"}} onClick={() => dispatch(crearCita(authToken))}>Confirmar</a>
                         <br />
-                        <a href="#" style={{color:"white"}} type="button" class="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
+                        <a href="#" style={{color:"white"}} type="button" className="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
                     </div>
                 </div>
             </div>

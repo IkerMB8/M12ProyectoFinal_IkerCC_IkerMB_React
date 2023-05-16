@@ -7,7 +7,7 @@ export default function Contacta() {
     <>
         <div className='positioning'>
             <h1 className='titContacta' id="linkServicios">SERVICIOS</h1>
-            <section class="servicios_div_1">
+            <section className="servicios_div_1">
                 <div className='bg_serv'>
                     <img src='/men.jpg' className='img_Servicios'></img>
                     <div className='div_Servicios_izq'>
@@ -17,7 +17,7 @@ export default function Contacta() {
                 </div>
             </section>
 
-            <section class="servicios_div_2">
+            <section className="servicios_div_2">
                 <div className='bg_serv'>
                     <div className='div_Servicios_der'>
                         <h1 className='h1_Servicios'><span className='h1_Servicios_Span'>C</span>OLOR</h1>
