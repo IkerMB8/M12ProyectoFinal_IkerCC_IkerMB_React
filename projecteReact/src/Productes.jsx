@@ -1,27 +1,43 @@
-// import './equipo.css'
-// import React, { useState } from 'react';
-// import Modal from './Modal';
+import './productes.css';
 
-// const App = () => {
-//   const [isModalOpen, setIsModalOpen] = useState(false);
+export default function Productes() {
 
-//   const handleOpenModal = () => {
-//     setIsModalOpen(true);
-//   };
+    return (
+        <>
+            <div class="container-artistas">
+                <a href='/productes_show'><div class="card-artista card-artista0">
+                    <div class="border">
+                        <h2 class="titulo_carta">ColorSilk Beautiful Color™ Hair Color</h2>
+                    </div>
+                </div></a>
+                <div class="card-artista card-artista1">
+                    <div class="border">
+                        <h2 class="titulo_carta">Oliver Heldens</h2>
+                    </div>
+                </div>
+                <div class="card-artista card-artista2">
+                    <div class="border">
+                        <h2 class="titulo_carta">Skrillex</h2>   
+                    </div>
+                </div>  
 
-//   const handleCloseModal = () => {
-//     setIsModalOpen(false);
-//   };
-
-//   return (
-//     <div>
-//       <button onClick={handleOpenModal}>Abrir modal</button>
-//       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-//         <h2>Este es el contenido del modal</h2>
-//         <p>Aquí puedes colocar cualquier contenido que desees mostrar en el modal.</p>
-//       </Modal>
-//     </div>
-//   );
-// };
-
-// export default App;
+                <div class="card-artista card-artista0">
+                    <div class="border">
+                        <h2 class="titulo_carta">Boris Brejcha</h2>
+                    </div>
+                </div>
+                <div class="card-artista card-artista1">
+                    <div class="border">
+                        <h2 class="titulo_carta">Oliver Heldens</h2>
+                    </div>
+                </div>
+                <div class="card-artista card-artista2">
+                    <div class="border">
+                        <h2 class="titulo_carta">Skrillex</h2>   
+                    </div>
+                </div>  
+                
+            </div>
+        </>
+    );
+};

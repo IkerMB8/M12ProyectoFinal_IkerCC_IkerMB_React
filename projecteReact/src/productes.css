@@ -1,0 +1,171 @@
+.container-artistas {
+    bottom: 35vh;
+    left: 30vh;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-artistas2 {
+    bottom: 18vh;
+    left: 30vh;
+    height: 10vh;
+    width: 100%;
+    max-height: 800px;
+    max-width: 1280px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+}
+
+
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid #fff;
+}
+
+
+.card-artista {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 1;
+}
+
+
+
+.card-artista0 {
+    background: url("https://cdn.azure.revlon.com/-/media/project/revlon-inc/revlon/revloncom/pdp/hair/permanent-hair-color/esp----colorsilk-beautiful-color-hair-color/product/colorsilk_beautiful_color_pack_black_300rgb_600x1065px_esp.ashx?h=1065&iar=0&w=600") center center no-repeat;
+    background-size: 400px;
+}
+
+
+
+.card-artista0:hover {
+    background: url("https://cdn.azure.revlon.com/-/media/project/revlon-inc/revlon/revloncom/pdp/hair/permanent-hair-color/esp----colorsilk-beautiful-color-hair-color/product/colorsilk_beautiful_color_pack_black_300rgb_600x1065px_esp.ashx?h=1065&iar=0&w=600") center center no-repeat;
+    background-size: 600px;
+}
+
+
+.card-artista0:hover h2 {
+    opacity: 1;
+}
+
+
+.card-artista1 {
+    background: url("https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/OliverHeldens_New2.jpg") center center no-repeat;
+    background-size: 390px;
+}
+
+
+.card-artista1:hover {
+    background: url("https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/OliverHeldens_New2.jpg") center center no-repeat;
+    background-size: 600px;
+}
+
+
+.card-artista1:hover h2 {
+    opacity: 1;
+}
+
+.card-artista2 {
+    background: url("https://www.nme.com/wp-content/uploads/2023/01/Skrillex2-press-2023.jpeg") center center no-repeat;
+    background-size: 600px;
+}
+
+.card-artista2:hover {
+    background: url("https://www.nme.com/wp-content/uploads/2023/01/Skrillex2-press-2023.jpeg") center center no-repeat;
+    background-size: 1000px;
+}
+
+.card-artista2:hover h2 {
+    opacity: 1;
+}
+
+.card-artista3 {
+    background: url("https://i.guim.co.uk/img/media/cee3639f3c638a222e7dceb749e79a5b16b93183/0_550_8256_4954/master/8256.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=64d1ed16f83e08ef2ab9fdb2c0354da3") center center no-repeat;
+    background-size: 400px;
+}
+
+.card-artista3:hover {
+    background: url("https://i.guim.co.uk/img/media/cee3639f3c638a222e7dceb749e79a5b16b93183/0_550_8256_4954/master/8256.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=64d1ed16f83e08ef2ab9fdb2c0354da3") center center no-repeat;
+    background-size: 600px;
+}
+
+.card-artista3:hover h2 {
+    opacity: 1;
+}
+
+.card-artista4 {
+    background: url("https://yt3.googleusercontent.com/in7ji16oeon_ypiAMeH-ZdTWSaIC54yZqMsFg0X3uhTBk4MDCuIkRf6TIoQQCqjl20DSdakhSQ=s900-c-k-c0x00ffffff-no-rj") center center no-repeat;
+    background-size: 390px;
+}
+
+.card-artista4:hover {
+    background: url("https://yt3.googleusercontent.com/in7ji16oeon_ypiAMeH-ZdTWSaIC54yZqMsFg0X3uhTBk4MDCuIkRf6TIoQQCqjl20DSdakhSQ=s900-c-k-c0x00ffffff-no-rj") center center no-repeat;
+    background-size: 600px;
+}
+
+.card-artista4:hover h2 {
+    opacity: 1;
+}
+
+.card-artista5 {
+    background: url("https://www.amsterdam-dance-event.nl/uploads/images/artists-speakers/_900xAUTO_crop_center-center_none/000012710012.JPG") center center no-repeat;
+    background-size: 600px;
+}
+
+.card-artista5:hover {
+    background: url("https://www.amsterdam-dance-event.nl/uploads/images/artists-speakers/_900xAUTO_crop_center-center_none/000012710012.JPG") center center no-repeat;
+    background-size: 1000px;
+}
+
+.card-artista5:hover h2 {
+    opacity: 1;
+}
+
+
+
+.titulo_carta {
+    color: #fff;
+    margin-top: 300px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.show_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.h1_show{
+    font-family: "AustinRoman","TimesNewRoman",Roman,Georgia,serif;
+}

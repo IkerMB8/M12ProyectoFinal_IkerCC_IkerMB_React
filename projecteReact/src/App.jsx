@@ -10,7 +10,8 @@ import Premios from "./Premios";
 import NotFound from "./NotFound";
 import Contacta from "./Contacta";
 
-// import Productes from "./Productes";
+import Productes from "./Productes";
+import Productes_Show from "./Productes_Show";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router-dom";
 import './App.css';
@@ -37,6 +38,8 @@ export default function App() {
               <Route path='/salon' element={<Salon></Salon>} />
               <Route path='/premios' element={<Premios></Premios>} />
               <Route path='/contacta' element={<Contacta></Contacta>}></Route>
+              <Route path='/productos' element={<Productes></Productes>}></Route>
+              <Route path='/productes_show' element={<Productes_Show></Productes_Show>}></Route>
               <Route path='/equipo' element={<Equipo/>} />
               <Route path='/cuenta' element={<Account/>} />
             </Routes>

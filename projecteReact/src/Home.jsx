@@ -7,7 +7,6 @@ import Colecciones from './Colecciones';
 import CHRAcademy from './CHRAcademy';
 // import Feed from './Feed';
 // import Citas from './Citas';
-// import Productes from './Productes';
 import Contacta from './Contacta';
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
             <CHRAcademy></CHRAcademy>
             {/* <Feed></Feed> */}
             {/* <Citas></Citas> */}
-            {/* <Productes></Productes> */}
             <Contacta></Contacta>
         </>
     )
