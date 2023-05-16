@@ -154,6 +154,7 @@
 
 .titulo_carta {
     color: #fff;
+    background-color: #000;
     margin-top: 300px;
     opacity: 0;
     transition: opacity 1s;
@@ -168,4 +169,9 @@
 
 .h1_show{
     font-family: "AustinRoman","TimesNewRoman",Roman,Georgia,serif;
+}
+
+.left_show{
+    float: left;
+    width: 30%;
 }
