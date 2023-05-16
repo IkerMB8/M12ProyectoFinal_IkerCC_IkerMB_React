@@ -187,3 +187,43 @@
     color: white;
     margin: 0;
   }
+
+
+@media only screen and (max-width: 1630px)  {
+
+  .chracademy{
+    height: 1360px;
+  }
+  
+  .abajoCHR{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1270px)  {
+
+  .chracademy{
+    height: 1510px;
+  }
+}
+
+@media only screen and (max-width: 995px)  {
+
+  .chracademy{
+    height: 1750px;
+  }
+}
+
+@media only screen and (max-width: 751px)  {
+
+  .chracademy{
+    height: 2000px;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+
+  .chracademy{
+    height: 2355px;
+  }
+}

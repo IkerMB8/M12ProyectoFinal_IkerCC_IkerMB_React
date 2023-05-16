@@ -50,7 +50,11 @@ export default function CHRAcademy() {
                                         <p>Essential M es la formación perfecta para todos aquellos profesionales que quieran mejorar sus conocimientos de peluquería masculina. Durante la sesión se presentará la última colección masculina de Christian Ríos y se trabajarán las técnicas, conocimientos y habilidades necesarios para llevar a cabo un trabajo de vanguardia que haga que el profesional despunte y que de esta forma se diferencie de su competencia.</p>
                                     </div>
                                     <div class="back">
-
+                                        <p><span className='bold'>Duración: </span>1 día (lunes)</p>
+                                        <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
+                                        <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
+                                        <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
+                                        <a className='raise' href='#linkContacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
@@ -64,7 +68,11 @@ export default function CHRAcademy() {
                                         <p>Essential W es la formación perfecta para todos aquellos profesionales que quieran mejorar sus conocimientos de peluquería femenina. Durante la sesión se presentará la última colección femenina de Christian Ríos y se trabajarán las técnicas, conocimientos y habilidades necesarios para llevar a cabo un trabajo de vanguardia que haga que el profesional despunte y se diferencie de su competencia.</p>
                                     </div>
                                     <div class="back">
-
+                                        <p><span className='bold'>Duración: </span>1 día (lunes)</p>
+                                        <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
+                                        <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
+                                        <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
+                                        <a className='raise' href='#linkContacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
@@ -78,7 +86,11 @@ export default function CHRAcademy() {
                                         <p>La excelencia de los rubios, a  tu alcance en pocas horas. En primer lugar, Essential Blond's es una formación de peluquería tanto femenina  como masculina dedicada a trabajos de rubios: fondos de decoloración, alturas de tonos y matices adecuados para cada decoloración global. Para continuar, durante la sesión se tratarán  las técnicas más comerciales (balayage, melting, contouring, etc.), pero también las más editoriales aplicables a trabajos más creativos y de moda.</p>
                                     </div>
                                     <div class="back">
-
+                                        <p><span className='bold'>Duración: </span>1 día (lunes)</p>
+                                        <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
+                                        <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
+                                        <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
+                                        <a className='raise' href='#linkContacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
