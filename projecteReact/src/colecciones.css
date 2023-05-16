@@ -105,3 +105,11 @@
 .bold{
     font-weight: bold;
 }
+
+@media only screen and (max-width: 850px)  {
+
+.coleccion{
+  margin-bottom: 10%;
+}
+
+}

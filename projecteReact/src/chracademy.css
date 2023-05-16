@@ -1,0 +1,229 @@
+.chracademy{
+    background-image: url(../public/Christian-Rios.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    width: 65%;
+    height: 1050px;    
+}
+
+.bg_chr{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.499);
+    align-items: center;
+}
+
+.arribaCHR{
+    margin-top: 3%;
+}
+
+.medioCHR h1{
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+.medioCHR{
+    color: white;
+    text-align: justify;
+    padding-right: 15%;
+    padding-left: 15%;
+    font-weight: 400;
+}
+
+.abajoCHR h2{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.abajoCHR p{
+    color: white;
+    font-size: 0.8em;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.abajoCHR{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.boxCHR{
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .flip-container {
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flipper, .front, .back {
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+  }
+  
+  .flipper {
+    transition: 1.6s;
+    transition: 1.6s;
+    transition: 1.6s;
+    transition: 1.6s;
+    transition: 1.6s;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    position: relative;
+  
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .front, .back {
+    backface-visibility:hidden;
+    backface-visibility:hidden;
+    backface-visibility:hidden;
+    backface-visibility:hidden;
+    backface-visibility:hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    overflow:hidden;
+  }
+  
+  .front {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .back {
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+  }
+
+  .back p{
+      margin: 1.5%;
+      text-align: center;
+
+  }
+
+  .flipper .back {
+    background-color: #79959E;
+  }
+  
+  .flipper .front {
+    background-color:#000;
+  }
+  
+  .flip-container:hover .flipper {
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      transform: rotateX(180deg);
+  }
+  
+  /* Allows graceful degredation in IE */
+  .flip-container:hover .flipper.default .front,
+  .flip-container:hover .flipper.required .front,
+  .flip-container:hover .flipper.selected .front{
+    display:none;
+  }
+
+  .raise a{
+    color: white;
+    margin: 0;
+  }
+
+
+@media only screen and (max-width: 1630px)  {
+
+  .chracademy{
+    height: 1360px;
+  }
+  
+  .abajoCHR{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1270px)  {
+
+  .chracademy{
+    height: 1510px;
+  }
+}
+
+@media only screen and (max-width: 995px)  {
+
+  .chracademy{
+    height: 1750px;
+  }
+}
+
+@media only screen and (max-width: 751px)  {
+
+  .chracademy{
+    height: 2000px;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+
+  .chracademy{
+    height: 2355px;
+  }
+}

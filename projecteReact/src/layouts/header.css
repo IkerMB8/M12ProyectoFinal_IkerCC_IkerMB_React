@@ -61,7 +61,7 @@ body,#root {
     padding: 0px;
 }
 
-a{
+.menu-link a{
     color: black !important;
     font-weight: 600 !important;
     padding: 5px;
@@ -148,12 +148,16 @@ a{
     img{border:0;}
     input{color:inherit;font:inherit;margin:0;}
     input{line-height:normal;}
-    .container{width:1200px;max-width:90%;margin:0 auto;}
+    .container{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
     @media only screen and (max-width: 959px){
     .container{max-width:90%;}
     }
     img{max-width:100%;height:auto;vertical-align:middle;}
-    .clr:after{content:"";display:block;visibility:hidden;clear:both;zoom:1;height:0;}
+    .clr:after{display:block;visibility:hidden;clear:both;zoom:1;height:0;}
     a{color:#333;}
     a:hover{color:#13aff0;}
     a,a:hover,a:focus{text-decoration:none;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}

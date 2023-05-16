@@ -2,12 +2,11 @@ import './index.css';
 import Equipo from './Equipo';
 import Servicios from './Servicios';
 import Salon from './Salon';
-// import Premios from './Premios';
+import Premios from './Premios';
 import Colecciones from './Colecciones';
-// import CHRAcademy from './CHRAcademy';
+import CHRAcademy from './CHRAcademy';
 // import Feed from './Feed';
 // import Citas from './Citas';
-// import Productes from './Productes';
 import Contacta from './Contacta';
 
 export default function Home() {
@@ -24,12 +23,11 @@ export default function Home() {
             <Equipo></Equipo>
             <Servicios></Servicios>
             <Salon></Salon>
-            {/* <Premios></Premios> */}
+            <Premios></Premios>
             <Colecciones></Colecciones>
-            {/* <CHRAcademy></CHRAcademy> */}
+            <CHRAcademy></CHRAcademy>
             {/* <Feed></Feed> */}
             {/* <Citas></Citas> */}
-            {/* <Productes></Productes> */}
             <Contacta></Contacta>
         </>
     )
