@@ -11,14 +11,15 @@ export default function Login({setCanvi}) {
     return (
         <> 
             <div className="bg-imagen">
-                {/* <img className="imgFondo" src="/salon.jpg"></img> */}
-                <div className="boxLogin">
-                    <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', padding: '10px 10px 10px 0px'}}>
-                        <div className="grad">
-                            <img className='imagenLogo' src='/chr.png'></img>
-                        </div>
-                        <form className="login" onSubmit={handleSubmit(onSubmit)}>
-                            
+            <div className="formlogreg">
+                <div>
+                        <img className="imagenLogo" src="/chr.png"/>
+                </div>
+                <div>
+                    <h1 className="text-center">Login</h1>
+                    <form className="registration-form" onSubmit={handleSubmit(onSubmit)}>
+                        <label>
+                            <span className="label-text">Email</span>
                             <input type="text" placeholder="Email" {...register("email", {
                                 required: "Aquest camp és obligatori",
                                 minLength: {
@@ -33,8 +34,9 @@ export default function Login({setCanvi}) {
                                     value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
                                     message: "Inserte un email válido" 
                             }})}/>
-                            {errors.email ? <div className="error">{errors.email.message}</div> : <></>}
-                            <br/>
+                        </label>
+                        <label className="password">
+                            <span className="label-text">Password</span>
                             <input type="password" placeholder="Password" {...register("password", {
                                 required: "Aquest camp és obligatori",
                                 minLength: {
@@ -49,16 +51,17 @@ export default function Login({setCanvi}) {
                                     value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/,
                                     message: "La contraseña tiene que contener al menos una minúscula, una mayuscula, i un número" 
                             }})}/>
-                            {errors.password ? <div className="error">{errors.password.message}</div> : <></>}
-                            <br/>
-                            <input type="submit" value="Login"/>
-                            
-                        </form>
-                    </div>
-                    <div>
-                        <p>¿No tienes cuenta? <a href="#" onClick={() => {setCanvi(false);}} > Regístrate</a></p>
-                    </div>
+                        </label>
+                        <div className="text-center">
+                            <button className="submit" name="register">Iniciar Sesión</button>
+                        </div>
+                        <div className="preglogreg">
+                            <p>¿No tienes cuenta? <a href="#" onClick={() => {setCanvi(false);}} > Regístrate</a></p>
+                        </div>
+                    </form>
                 </div>
+            </div>
+                
             </div>
         </>
     )
