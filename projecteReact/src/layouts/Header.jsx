@@ -43,59 +43,64 @@ export default function Header() {
           <div id="site-navigation-wrap" className="clr">
             <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
-                <li id="menu-item-187" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-187">
+                <li id="menu-item-187" className="menu-item">
                   <Link to="/#Equipo" className="menu-link">
                     <span className="text-wrap">El equipo</span>
                   </Link>
                 </li>
-                <li id="menu-item-667" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-667">
+                <li id="menu-item-667" className="menu-item">
                   <Link to="/#Servicios" className="menu-link">
                     <span className="text-wrap">Servicios</span>
                   </Link>
                 </li>
-                <li id="menu-item-189" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
+                <li id="menu-item-189" className="menu-item">
                   <Link to="/#Salon" className="menu-link">
                     <span className="text-wrap">El Salón</span>
                   </Link>
                 </li>
-                <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
+                <li id="menu-item-171" className="menu-item">
                   <Link to="/#Premios" className="menu-link">
                     <span className="text-wrap">Premios</span>
                   </Link>
                 </li>
-                <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
+                <li id="menu-item-171" className="menu-item">
                   <Link to="/#Colecciones" className="menu-link">
                     <span className="text-wrap">Colecciones</span>
                   </Link>
                 </li>
-                <li id="menu-item-504" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
+                <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
                   <Link to="/#CHR" className="menu-link">
                     <span className="text-wrap">CHR Academy</span>
                   </Link>
                 </li>
-                <li id="menu-item-534" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-534">
+                <li className="menu-item">
                   <Link to="/feed" className="menu-link">
                     <span className="text-wrap">Feed</span>
                   </Link>
                 </li>
-                <li id="menu-item-601" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-601">
+                <li className="menu-item">
                   <Link to="/citas" className="menu-link">
                     <span className="text-wrap">Citas</span>
                   </Link>
                 </li>
-                <li id="menu-item-703" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-703">
+                <li className="menu-item">
+                  <Link to="/productos" className="menu-link">
+                    <span className="text-wrap">Productos</span>
+                  </Link>
+                </li>
+                <li className="menu-item">
                   <Link to="/contacta" className="menu-link">
                     <span className="text-wrap">Contacta</span>
                   </Link>
                 </li>
-                <li id="menu-item-719" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-719">
+                <li className="menu-item">
                   <Link to="/carrito" className="menu-link">
                     <span className="text-wrap">
                       <i className="bi bi-cart-fill" />
                     </span>
                   </Link>
                 </li>
-                <li id="menu-item-720" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-720">
+                <li className="menu-item">
                   <Link to="/cuenta" className="menu-link">
                     <span className="text-wrap">
                       <i className="bi bi-person-fill" />
