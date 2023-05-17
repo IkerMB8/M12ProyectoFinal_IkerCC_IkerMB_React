@@ -11,7 +11,7 @@ export default function CHRAcademy() {
     });
     return (
         <>
-        <div className='positioning' id='linkCHR'>
+        <div className='positioning' id='CHR'>
             <div className='chracademy'>
                 <div className='bg_chr'>
                     <div className='arribaCHR'><img src='/CHRAcademy.png'></img></div>

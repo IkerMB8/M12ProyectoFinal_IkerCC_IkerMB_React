@@ -6,7 +6,7 @@ export default function Contacta() {
   return (
     <>
     <div className='positioning'>
-      <h1 className='titContacta' id="linkContacta">CONTACTA CON NOSOTROS</h1>
+      <h1 className='titContacta' id="Contacta">CONTACTA CON NOSOTROS</h1>
       <section className="form_wrap">
         <section className="cantact_info">
           <section className="info_title">

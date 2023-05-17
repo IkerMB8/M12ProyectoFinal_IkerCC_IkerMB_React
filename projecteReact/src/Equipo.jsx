@@ -3,7 +3,7 @@ import './equipo.css'
 export default function Equipo() {
     return (
         <> 
-            <div className='pagina' id="linkEquipo">
+            <div className='pagina' id="Equipo">
                 <div className='equipo'>
                     <h1 >NUESTRO EQUIPO</h1>
                     <h2>PELUQUERÍA EN VILANOVA I LA GELTRÚ</h2>

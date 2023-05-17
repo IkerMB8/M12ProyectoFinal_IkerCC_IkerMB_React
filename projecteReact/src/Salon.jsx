@@ -93,7 +93,7 @@ export default function Equipo() {
         /*--------------------
         Listeners
         --------------------*/
-        let salon = document.getElementById('linkSalon')
+        let salon = document.getElementById('Salon')
         salon.addEventListener('mousewheel', handleWheel)
         salon.addEventListener('mousedown', handleMouseDown)
         salon.addEventListener('mousemove', handleMouseMove)
@@ -106,7 +106,7 @@ export default function Equipo() {
 
     return (
         <> 
-            <div className="carousel" id="linkSalon">
+            <div className="carousel" id="Salon">
                 <h1 className='h1Salon'>EL SALÓN</h1>
                 <div className="carousel-item">
                     <div className="carousel-box">

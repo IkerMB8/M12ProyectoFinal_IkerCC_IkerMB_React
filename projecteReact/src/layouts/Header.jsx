@@ -1,108 +1,112 @@
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './header.css';
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useState, useContext, useEffect } from 'react';
 
 export default function Header() {
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  const location = useLocation();
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substr(1); // Eliminar el símbolo '#' del hash
+      scrollToElement(id);
+    }
+  }, [location]);
+
   return (
-    <>
+    <header id="site-header">
       <div id="site-header-inner" className="clr container">
-        <div className='left'>
+        <div className="left">
           <div id="site-logo" className="clr" itemScope="" itemType="https://schema.org/Brand">
             <div id="site-logo-inner" className="clr">
-              <a href="/" className="custom-logo-link" rel="home" aria-current="page"><img width="389" height="316" src="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png" className="custom-logo" alt="Christian Ríos Hair Couture" decoding="async" srcSet="https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black.png 389w, https://www.christianrioshaircouture.com/wp-content/uploads/2021/09/cropped-Logo-CHR_sin-fondo_black-300x244.png 300w" sizes="(max-width: 389px) 100vw, 389px" /></a>
+              <Link to="/" className="custom-logo-link" rel="home" aria-current="page">
+                <img
+                  width="389"
+                  height="316"
+                  src="/chr.png"
+                  className="custom-logo"
+                  alt="Christian Ríos Hair Couture"
+                  decoding="async"
+                  sizes="(max-width: 389px) 100vw, 389px"
+                />
+              </Link>
             </div>
           </div>
         </div>
-        <div>
-
-        </div>
-        <div className='right'>
+        <div className="right">
           <div id="site-navigation-wrap" className="clr">
             <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
                 <li id="menu-item-187" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-187">
-                  <a href="/#linkEquipo" className="menu-link">
+                  <Link to="/#Equipo" className="menu-link">
                     <span className="text-wrap">El equipo</span>
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-667" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-667">
-                  <a href="/#linkServicios" className="menu-link">
+                  <Link to="/#Servicios" className="menu-link">
                     <span className="text-wrap">Servicios</span>
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-189" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189">
-                  <a href="/#linkSalon" className="menu-link">
+                  <Link to="/#Salon" className="menu-link">
                     <span className="text-wrap">El Salón</span>
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                  <a href="/#linkPremios" className="menu-link">
+                  <Link to="/#Premios" className="menu-link">
                     <span className="text-wrap">Premios</span>
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-171" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
-                  <a href="/#linkColecciones" className="menu-link">
+                  <Link to="/#Colecciones" className="menu-link">
                     <span className="text-wrap">Colecciones</span>
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-504" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
-                  <a href="/#linkCHR" className="menu-link">
+                  <Link to="/#CHR" className="menu-link">
                     <span className="text-wrap">CHR Academy</span>
-                  </a>
+                  </Link>
                 </li>
-                <li id="menu-item-530" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530">
-                  <a href="/feed" className="menu-link">
+                <li id="menu-item-534" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-534">
+                  <Link to="/feed" className="menu-link">
                     <span className="text-wrap">Feed</span>
-                  </a>
+                  </Link>
                 </li>
-                <li id="menu-item-530" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530">
-                  <a href="/citas" className="menu-link">
+                <li id="menu-item-601" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-601">
+                  <Link to="/citas" className="menu-link">
                     <span className="text-wrap">Citas</span>
-                  </a>
+                  </Link>
                 </li>
-                <li id="menu-item-530" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530">
-                  <a href="/productos" className="menu-link">
-                    <span className="text-wrap">Productos</span>
-                  </a>
-                </li>
-                <li id="menu-item-190" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
-                  <a href="/#linkContacta" className="menu-link">
+                <li id="menu-item-703" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-703">
+                  <Link to="/contacta" className="menu-link">
                     <span className="text-wrap">Contacta</span>
-                  </a>
+                  </Link>
                 </li>
-                <li id="menu-item-190" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
-                  <a href="/carrito" className="menu-link">
-                    <span className="text-wrap"><i className='bi bi-cart-fill'></i></span>
-                  </a>
+                <li id="menu-item-719" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-719">
+                  <Link to="/carrito" className="menu-link">
+                    <span className="text-wrap">
+                      <i className="bi bi-cart-fill" />
+                    </span>
+                  </Link>
                 </li>
-                <li id="menu-item-190" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
-                  <a href="/cuenta" className="menu-link">
-                    <span className="text-wrap"><i className='bi bi-person-fill'></i></span>
-                  </a>
+                <li id="menu-item-720" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-720">
+                  <Link to="/cuenta" className="menu-link">
+                    <span className="text-wrap">
+                      <i className="bi bi-person-fill" />
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
-        </div>        
+        </div>
       </div>
-    </>
+    </header>
   );
 }

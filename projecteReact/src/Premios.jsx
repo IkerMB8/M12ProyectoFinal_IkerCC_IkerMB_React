@@ -7,7 +7,7 @@ const Premios = () => {
     useSnapCarousel();
   return (
     <>
-        <h1 id='linkPremios'>PREMIOS Y NOMINACIONES</h1>
+        <h1 id='Premios'>PREMIOS Y NOMINACIONES</h1>
         <ul
         ref={scrollRef}
         style={{

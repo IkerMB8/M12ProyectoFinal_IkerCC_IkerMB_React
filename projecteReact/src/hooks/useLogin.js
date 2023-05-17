@@ -3,7 +3,7 @@ import { UserContext } from "../userContext";
 
 export default function doLogin() {
     let [error, setError] = useState("");
-    let {authToken, setAuthToken, usuari, setUsuari, idUsuari, setIdUsuari} = useContext(UserContext);
+    let {authToken, setAuthToken, usuari, setUsuari, idUsuari, setIdUsuari, idCliente, setIdCliente} = useContext(UserContext);
 
     const checkAuthToken = async () => {
         if (sessionStorage.getItem('token')){
@@ -21,6 +21,8 @@ export default function doLogin() {
                     setAuthToken(sessionStorage.getItem('token'));
                     setUsuari(resposta.user.email);
                     setIdUsuari(resposta.user.id);
+                    console.log(resposta.user.ID_Cliente)
+                    setIdCliente(resposta.user.ID_Cliente);
                 }else{
                     console.log("La resposta no ha triomfat");
                 }            

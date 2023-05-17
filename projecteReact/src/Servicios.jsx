@@ -6,7 +6,7 @@ export default function Contacta() {
   return (
     <>
         <div className='positioning'>
-            <h1 className='titContacta' id="linkServicios">SERVICIOS</h1>
+            <h1 className='titContacta' id="Servicios">SERVICIOS</h1>
             <section className="servicios_div_1">
                 <div className='bg_serv'>
                     <img src='/men.jpg' className='img_Servicios'></img>

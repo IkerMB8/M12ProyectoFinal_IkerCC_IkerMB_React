@@ -24,6 +24,7 @@ export default function App() {
   let [authToken, setAuthToken] = useState("");
   let [usuari, setUsuari] = useState("");
   let [idUsuari, setIdUsuari] = useState("");
+  let [idCliente, setIdCliente] = useState("");
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(getServicios());
@@ -32,7 +33,7 @@ export default function App() {
 
   return (
     <>
-      <UserContext.Provider value= { { usuari, setUsuari, authToken, setAuthToken, idUsuari, setIdUsuari }}>
+      <UserContext.Provider value= { { usuari, setUsuari, authToken, setAuthToken, idUsuari, setIdUsuari, idCliente, setIdCliente }}>
           <> 
             <Header />
             <Routes>

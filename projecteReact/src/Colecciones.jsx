@@ -4,7 +4,7 @@ export default function Colecciones() {
     return (
         <>
         <div className='positioning'>
-            <div className='colecciones' id="linkColecciones">
+            <div className='colecciones' id="Colecciones">
                 <h3>PERRUQUERÍA EN EL GARRAF</h3>
                 <h1>COLECCIONES</h1>
                 <br></br>

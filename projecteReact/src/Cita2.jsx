@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 export default function Citas2() {
 
-    let {authToken, setAuthToken, usuari, setUsuari, idUsuari, setIdUsuari} = useContext(UserContext);
+    let {authToken, setAuthToken, usuari, setUsuari, idUsuari, setIdUsuari, idCliente, setIdCliente} = useContext(UserContext);
     const dispatch = useDispatch();
     const [openIndex, setOpenIndex] = useState(-1);
     const fechaActual = new Date();
@@ -41,7 +41,7 @@ export default function Citas2() {
                 <div className="col">
                     <div className="text-center">
                         <input id="especialistaId" name="especialistaId" type="hidden" value="702" />
-                        <a className="btn btn-success btn-large" style={{color:"white"}} onClick={() => dispatch(crearCita(authToken))}>Confirmar</a>
+                        <a className="btn btn-success btn-large" style={{color:"white"}} onClick={() => dispatch(crearCita(idCliente))}>Confirmar</a>
                         <br />
                         <a href="#" style={{color:"white"}} type="button" className="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
                     </div>

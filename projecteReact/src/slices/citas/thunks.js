@@ -1,16 +1,19 @@
 import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores } from "./citaSlice";
 
-export const crearCita = (authToken) => {
+export const crearCita = (id) => {
     return async (dispatch, getState) => {
-        const cita = {
-            Fecha: getState().citas.Fecha,
-            Email: getState().citas.Email,
-            Telefono: getState().citas.Telefono,
-            ID_Cliente: 1,
-            ID_Trabajador: getState().citas.ID_Trabajador,
-            ID_Servicio: getState().citas.ID_Servicio
+        const { Fecha, Email, Telefono, ID_Trabajador, ID_Servicio } = getState().citas;
+        let cita = {
+            Fecha,
+            Email,
+            Telefono,
+            ID_Trabajador,
+            ID_Servicio
         };
-        console.log(cita)
+        cita = {
+            ...cita,
+            ID_Cliente: id
+        };
         try{
             const data = await fetch("http://127.0.0.1:8000/api/reservas", {
             headers: {
