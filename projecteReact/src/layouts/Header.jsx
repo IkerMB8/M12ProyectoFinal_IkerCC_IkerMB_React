@@ -43,66 +43,66 @@ export default function Header() {
           <div id="site-navigation-wrap" className="clr">
             <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
-                <li id="menu-item-187" className="menu-item">
+                <li className="menu-item">
                   <Link to="/#Equipo" className="menu-link">
-                    <span className="text-wrap">El equipo</span>
+                    <span>El equipo</span>
                   </Link>
                 </li>
-                <li id="menu-item-667" className="menu-item">
+                <li className="menu-item">
                   <Link to="/#Servicios" className="menu-link">
-                    <span className="text-wrap">Servicios</span>
+                    <span>Servicios</span>
                   </Link>
                 </li>
-                <li id="menu-item-189" className="menu-item">
+                <li className="menu-item">
                   <Link to="/#Salon" className="menu-link">
-                    <span className="text-wrap">El Salón</span>
+                    <span>El Salón</span>
                   </Link>
                 </li>
-                <li id="menu-item-171" className="menu-item">
+                <li className="menu-item">
                   <Link to="/#Premios" className="menu-link">
-                    <span className="text-wrap">Premios</span>
+                    <span>Premios</span>
                   </Link>
                 </li>
-                <li id="menu-item-171" className="menu-item">
+                <li className="menu-item">
                   <Link to="/#Colecciones" className="menu-link">
-                    <span className="text-wrap">Colecciones</span>
+                    <span>Colecciones</span>
                   </Link>
                 </li>
-                <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504">
+                <li className="menu-item">
                   <Link to="/#CHR" className="menu-link">
-                    <span className="text-wrap">CHR Academy</span>
+                    <span>CHR Academy</span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/feed" className="menu-link">
-                    <span className="text-wrap">Feed</span>
+                    <span>Feed</span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/citas" className="menu-link">
-                    <span className="text-wrap">Citas</span>
+                    <span>Citas</span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/productos" className="menu-link">
-                    <span className="text-wrap">Productos</span>
+                    <span>Productos</span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/contacta" className="menu-link">
-                    <span className="text-wrap">Contacta</span>
+                    <span>Contacta</span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/carrito" className="menu-link">
-                    <span className="text-wrap">
+                    <span>
                       <i className="bi bi-cart-fill" />
                     </span>
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/cuenta" className="menu-link">
-                    <span className="text-wrap">
+                    <span>
                       <i className="bi bi-person-fill" />
                     </span>
                   </Link>
