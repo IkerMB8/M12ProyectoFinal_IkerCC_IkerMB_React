@@ -29,16 +29,16 @@ DOMINGO Y LUNES: CERRADO</p>
         <form action="" className="form_contact">
           <h2>Envia un mensaje</h2>
           <div className="user_info">
-            <label for="names">Nombres *</label>
+            <label htmlFor="names">Nombres *</label>
             <input type="text" id="names"/>
 
-            <label for="phone">Teléfono</label>
+            <label htmlFor="phone">Teléfono</label>
             <input type="text" id="phone"/>
 
-            <label for="email">Correo eléctronico *</label>
+            <label htmlFor="email">Correo eléctronico *</label>
             <input type="text" id="email"/>
 
-            <label for="mensaje">Mensaje *</label>
+            <label htmlFor="mensaje">Mensaje *</label>
             <textarea className='textoMsj' id="mensaje"></textarea>
             <input type="button" value="Enviar Mensaje" id="btnSend"/>
           </div>

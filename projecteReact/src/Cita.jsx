@@ -60,7 +60,7 @@ export default function Cita() {
                     <select id="selectServicio" name="selectServicio" className="form-control" {...register("servicio", {required: "Este campo és obligatorio"})}>
                         <option value="">Selecciona el servicio</option>
                         {Servicios.map((servicio) => (
-                            <option value={servicio.id}>{servicio.Nombre}</option>
+                            <option key={servicio.id} value={servicio.id}>{servicio.Nombre}</option>
                         ))}
                     </select>
                     {errors.servicio ? <div className="error">{errors.servicio.message}</div> : <></>}
@@ -70,7 +70,7 @@ export default function Cita() {
                     <select id="selectEspecialista" name="selectEspecialista" className="form-control" {...register("especialista", {required: "Este campo és obligatorio"})}>
                         <option value="">Selecciona l'especialista</option>
                         {Trabajadores.map((especialista) => (
-                            <option value={especialista.id}>{especialista.Nombre}</option>
+                            <option key={especialista.id} value={especialista.id}>{especialista.Nombre}</option>
                         ))}
                     </select>
                     {errors.especialista ? <div className="error">{errors.especialista.message}</div> : <></>}

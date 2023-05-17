@@ -18,25 +18,8 @@ export default function Register({ setCanvi }) {
                         <img className='imagenLogo' src='/chr.png'></img>
                     </div>
                     <form className="login" onSubmit={handleSubmit(onSubmit)}>
-                        
-                        <input type="text" placeholder="Usuario" {...register("email", {
-                            required: "Aquest camp és obligatori",
-                            minLength: {
-                                value: 6,
-                                message: "El email tiene que tener mínimo 6 caracteres"
-                            },
-                            maxLength: {
-                                value: 40,
-                                message: "El email no puede contener mas de 40 caracteres"
-                            },
-                            pattern: {
-                                value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-                                message: "Inserte un email válido" 
-                        }})}/>
-                        {errors.email ? <div className="error">{errors.email.message}</div> : <></>}
-                        <br/>
-                        <input type="text" placeholder="Email" style={{marginTop: '10px'}} {...register("email", {
-                            required: "Aquest camp és obligatori",
+                        <input type="text" placeholder="Email" {...register("email", {
+                            required: "Este campo es obligatorio",
                             minLength: {
                                 value: 6,
                                 message: "El email tiene que tener mínimo 6 caracteres"
@@ -52,7 +35,7 @@ export default function Register({ setCanvi }) {
                         {errors.email ? <div className="error">{errors.email.message}</div> : <></>}
                         <br/>
                         <input type="password" placeholder="Contraseña" {...register("password", {
-                            required: "Aquest camp és obligatori",
+                            required: "Este campo es obligatorio",
                             minLength: {
                                 value: 8,
                                 message: "La contraseña tiene que contener mínimo 8 caracteres"
@@ -68,7 +51,7 @@ export default function Register({ setCanvi }) {
                         {errors.password ? <div className="error">{errors.password.message}</div> : <></>}
                         <br/>
                         <input type="password" placeholder="Repetir Contraseña" {...register("password", {
-                                required: "Aquest camp és obligatori",
+                                required: "Este campo es obligatorio",
                                 minLength: {
                                     value: 8,
                                     message: "La contraseña tiene que contener mínimo 8 caracteres"
@@ -83,8 +66,7 @@ export default function Register({ setCanvi }) {
                         }})}/>
                         {errors.password ? <div className="error">{errors.password.message}</div> : <></>}
                         <br/>
-                        <input type="submit" value="Login"/>
-                        
+                        <input type="submit" value="Register" style={{marginTop: '10px'}}/>
                     </form>
                 </div>
                 <div>
