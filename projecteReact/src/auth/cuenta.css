@@ -96,6 +96,11 @@ hr{
     width: 50%;
 }
 
+.nickDatos h4{
+    color: #707070;
+    font-weight: 500;
+}
+
 .nickDatos input{
     width: 95%;
     background-color: rgb(233, 233, 233);
