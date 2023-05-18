@@ -17,7 +17,7 @@ export default function Cita() {
   return (
     <>
         <div className="citas">
-            <h1>Pedir cita</h1>
+            <h1>PEDIR CITA</h1>
             <form  onSubmit={handleSubmit(onSubmit)}>           
                 <div className="form-group">
                     <label htmlFor="emailUsuario" className="form-label">Introduce tu email</label>

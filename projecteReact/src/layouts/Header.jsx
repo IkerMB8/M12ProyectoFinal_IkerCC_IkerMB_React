@@ -204,11 +204,11 @@ export default function Header() {
                     <br></br>
                     <span className='mensajevacio2'>Explora multitud de artículos a buen precio</span>
                   </div>
-                  <a href="/productos">
+                  <Link to="/productos">
                     <button className='botonexplorar'>
                       <div>Explorar</div>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
