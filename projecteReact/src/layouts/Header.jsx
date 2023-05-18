@@ -169,10 +169,10 @@ export default function Header() {
         </div>
       </div>
       <div className="modal" id="exampleModal">
-        <div class="modal-content">
+        <div className="modal-content">
             <div className='modal-header'>
               <h1>Mi Cesta</h1>
-              <button type="button" className='close'><i class="bi bi-x"></i></button>
+              <button type="button" className='close'><i className="bi bi-x"></i></button>
             </div>
             <div>
               {productsCount > 0 ? (
