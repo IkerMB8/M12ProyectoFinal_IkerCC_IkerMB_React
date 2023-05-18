@@ -13,6 +13,7 @@ import Citas from "./Citas";
 import Success from "./pages/Success";
 import Cancel from "./pages/Cancel";
 import Productes from "./Productes";
+import CuentaRegistrada from "./auth/CuentaRegistrada";
 import Productes_Show from "./Productes_Show";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router-dom";
@@ -57,6 +58,9 @@ export default function App() {
                 <Route path='/cuenta' element={<Account/>} />
                 <Route path='/cancel' element={<Cancel/>} />
                 <Route path='/success' element={<Success/>} />
+
+
+                <Route path='/cuentaregistrada' element={<CuentaRegistrada/>} />
               </Routes>
               <Footer />
             </>

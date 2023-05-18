@@ -1,0 +1,169 @@
+.positioningCuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 78%;
+    width: 100%;
+}
+
+.cuentaBox{
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.leftCuenta{
+    width: 25%;
+    height: 55%;
+}
+
+.arribaLeftCuenta{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.abajoLeftCuenta{
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    height: 85%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.abajoLeftCuenta a{
+    color: rgb(133, 133, 133);
+    margin-top: 5%;
+    font-weight: 600;
+    margin-left: 15%;
+}
+
+.leftCuenta h1{
+    font-size: 1.5em;
+    padding: 0;
+    width: 60%;
+}
+
+.rightCuenta{
+    height: 97.5%;
+    width: 75%;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.rightCuenta h2{
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.fotoperfil{
+    border-radius: 50%;
+    width: 15%;
+    border: 2px solid rgb(63, 63, 63);
+}
+
+hr{
+    background-color: rgb(230, 230, 230);
+    height: 3px;
+    border: 0;
+    margin-bottom: 4%;
+}
+
+.datos{
+    margin-left: 3%;
+    height: 100%;
+}
+
+.arribaDatos{
+    display: flex;
+    flex-direction: row;
+    height: 17%;
+}
+
+.arribaDatos h3{
+    color: black;
+}
+
+.nickDatos{
+    width: 50%;
+}
+
+.nickDatos input{
+    width: 95%;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid gray;
+    color: black;
+    padding: 5px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.nacimientoDatos{
+    width: 50%;
+}
+
+.nacimientoDatos input{
+    width: 95%;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid gray;
+    color: black;
+    padding: 5px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.abajoDatos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0%;
+    height: 10%;
+    width: 97.5%;
+}
+
+.abajoDatos input{
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: transparent;
+    color: orange;
+    font-weight: 600;
+    border: 2px solid orange;
+}
+
+
+.abajoDatosContra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    height: 10%;
+    width: 97.5%;
+}
+
+.abajoDatosContra input{
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: transparent;
+    color: orange;
+    font-weight: 600;
+    border: 2px solid orange;
+}
+
+.abajoDatosContra h4, .abajoDatosContra p{
+    color: gray;
+    margin: 0;
+}
+
+span{
+    font-weight: bold;
+}
