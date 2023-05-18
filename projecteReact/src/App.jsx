@@ -10,6 +10,8 @@ import Premios from "./Premios";
 import NotFound from "./NotFound";
 import Contacta from "./Contacta";
 import Citas from "./Citas";
+import Success from "./pages/Success";
+import Cancel from "./pages/Cancel";
 import Productes from "./Productes";
 import Productes_Show from "./Productes_Show";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -18,6 +20,8 @@ import './App.css';
 import { UserContext } from "./userContext";
 import { getServicios, getTrabajadores } from "./slices/citas/thunks";
 import { useDispatch } from "react-redux";
+import CartProvider from "./Cart";
+import Store from "./pages/Store";
 
 export default function App() {
 
@@ -33,27 +37,31 @@ export default function App() {
 
   return (
     <>
-      <UserContext.Provider value= { { usuari, setUsuari, authToken, setAuthToken, idUsuari, setIdUsuari, idCliente, setIdCliente }}>
-          <> 
-            <Header />
-            <Routes>
-              <Route path='*' element={<NotFound />} />
-              <Route path="/" element={<Home></Home>} />
-              <Route path='/feed' element={<></>} />
-              <Route path='/cart' element={<></>} />
-              <Route path='/citas' element={<><Citas/></>} />
-              <Route path='/colecciones' element={<Colecciones></Colecciones>} />
-              <Route path='/salon' element={<Salon></Salon>} />
-              <Route path='/premios' element={<Premios></Premios>} />
-              <Route path='/contacta' element={<Contacta></Contacta>}></Route>
-              <Route path='/productos' element={<Productes></Productes>}></Route>
-              <Route path='/productes_show' element={<Productes_Show></Productes_Show>}></Route>
-              <Route path='/equipo' element={<Equipo/>} />
-              <Route path='/cuenta' element={<Account/>} />
-            </Routes>
-            <Footer />
-           </>
-      </UserContext.Provider>
+      <CartProvider>
+        <UserContext.Provider value= { { usuari, setUsuari, authToken, setAuthToken, idUsuari, setIdUsuari, idCliente, setIdCliente }}>
+            <> 
+              <Header />
+              <Routes>
+                <Route path='*' element={<NotFound />} />
+                <Route path="/" element={<Home></Home>} />
+                <Route path='/feed' element={<></>} />
+                <Route path='/cart' element={<></>} />
+                <Route path='/citas' element={<><Citas/></>} />
+                <Route path='/colecciones' element={<Colecciones></Colecciones>} />
+                <Route path='/salon' element={<Salon></Salon>} />
+                <Route path='/premios' element={<Premios></Premios>} />
+                <Route path='/contacta' element={<Contacta></Contacta>}></Route>
+                <Route path='/productos' element={<Store/>}></Route>
+                <Route path='/productes_show' element={<Productes_Show></Productes_Show>}></Route>
+                <Route path='/equipo' element={<Equipo/>} />
+                <Route path='/cuenta' element={<Account/>} />
+                <Route path='/cancel' element={<Cancel/>} />
+                <Route path='/success' element={<Success/>} />
+              </Routes>
+              <Footer />
+            </>
+        </UserContext.Provider>
+      </CartProvider>
     </>
   )
 }

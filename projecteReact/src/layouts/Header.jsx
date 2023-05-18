@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.css';
+import { useContext } from "react";
+import { Cart } from "../Cart";
+import CartProduct from "../components/CartProduct";
 
 export default function Header() {
   const location = useLocation();
@@ -13,11 +16,61 @@ export default function Header() {
   };
 
   useEffect(() => {
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modal = document.getElementById("exampleModal");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    openModalBtn.addEventListener("click", function () {
+      modal.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }, []);
+
+  useEffect(() => {
     if (location.hash) {
       const id = location.hash.substr(1); // Eliminar el símbolo '#' del hash
       scrollToElement(id);
     }
   }, [location]);
+
+  const cart = useContext(Cart);
+  const productsCount = cart.items.reduce(
+    (sum, product) => sum + product.quantity,
+    0
+  );
+
+  const checkout = async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ items: cart.items }),
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+        console.log(responseData.url);
+        if (responseData.url) {
+          window.location.assign(responseData.url);
+        }
+      } else {
+        console.log("Error in checkout request:", response.status);
+      }
+    } catch (error) {
+      console.log("Error in checkout request:", error);
+    }
+  };
 
   return (
     <header id="site-header">
@@ -94,11 +147,14 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/carrito" className="menu-link">
+                  <a className="menu-link" type="button" id="openModalBtn">
                     <span>
                       <i className="bi bi-cart-fill" />
                     </span>
-                  </Link>
+                    {productsCount > 0 && (
+                      <span className="cart-badge">{productsCount}</span>
+                    )}
+                  </a>
                 </li>
                 <li className="menu-item">
                   <Link to="/cuenta" className="menu-link">
@@ -110,6 +166,57 @@ export default function Header() {
               </ul>
             </nav>
           </div>
+        </div>
+      </div>
+      <div className="modal" id="exampleModal">
+        <div class="modal-content">
+            <div className='modal-header'>
+              <h1>Mi Cesta</h1>
+              <button type="button" className='close'><i class="bi bi-x"></i></button>
+            </div>
+            <div>
+              {productsCount > 0 ? (
+                <div >
+                  {cart.items.map((product, index) => (
+                    <CartProduct
+                      id={product.id}
+                      quantity={product.quantity}
+                      key={index}
+                    />
+                  ))}
+
+                  <h4>
+                    Total:{" "}
+                    {cart
+                      .getTotal()
+                      .toFixed(2)
+                      .toString()
+                      .replace(".", ",")
+                      .replace(/\,00/, "")}
+                    €
+                  </h4>
+                </div>
+              ) : (
+                <div style={{marginTop: "20px"}}>
+                  <img src="/NotFound.svg" alt="empty cart magnifying glass"/>
+                  <div>
+                    <span className='mensajevacio'>Tu carrito está vacio</span>
+                    <br></br>
+                    <span className='mensajevacio2'>Explora multitud de artículos a buen precio</span>
+                  </div>
+                  <a href="/productos">
+                    <button className='botonexplorar'>
+                      <div>Explorar</div>
+                    </button>
+                  </a>
+                </div>
+              )}
+            </div>
+            {productsCount > 0 && (
+              <div className='modal-footer'>
+                <button type="button" onClick={checkout}>Checkout</button>
+              </div>
+            )}
         </div>
       </div>
     </header>
