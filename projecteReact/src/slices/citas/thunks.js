@@ -1,4 +1,5 @@
 import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores } from "./citaSlice";
+const CONTENT_TYPE_JSON = "application/json";
 
 export const crearCita = (id) => {
     return async (dispatch, getState) => {
@@ -10,15 +11,18 @@ export const crearCita = (id) => {
             ID_Trabajador,
             ID_Servicio
         };
-        cita = {
-            ...cita,
-            ID_Cliente: id
-        };
+        if (id){
+            cita = {
+                ...cita,
+                ID_Cliente: id
+            };
+        }
+        console.log(cita)
         try{
             const data = await fetch("http://127.0.0.1:8000/api/reservas", {
             headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
+                Accept: CONTENT_TYPE_JSON,
+                "Content-Type": CONTENT_TYPE_JSON,
             },
             method: "POST",
             body: JSON.stringify(cita)
@@ -67,7 +71,7 @@ export const getServicios = () => {
         try{
             const data = await fetch("http://127.0.0.1:8000/api/servicios", {
                 headers: {
-                    'Accept': 'application/json'
+                    'Accept': CONTENT_TYPE_JSON
                 },
                 method: "GET"
             })
@@ -88,7 +92,7 @@ export const getTrabajadores = () => {
         try{
             const data = await fetch("http://127.0.0.1:8000/api/trabajadores", {
                 headers: {
-                    'Accept': 'application/json'
+                    'Accept': CONTENT_TYPE_JSON
                 },
                 method: "GET"
             })
