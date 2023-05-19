@@ -26,10 +26,9 @@ export default function Account() {
     }, [location]);
 
     
-
     return (
         <>
-            {authToken ? (
+            {! authToken ? (
                 <div className='positioningCuenta'>
                     <div className='cuentaBox'>
                         <div className='leftCuenta'>
@@ -108,15 +107,22 @@ export default function Account() {
                                 <div className='arribaDatos'>
                                     <div className='nickDatos'>
                                         <h3>Servicio</h3>
-                                        <h4>Corte de Pelo para niño</h4>
+                                        <h4>Corte de Pelo para Niño</h4>
+                                        <h4>Mechas Balayage</h4>
+                                        <h4>Corte de Pelo para Adulto</h4>
                                     </div>
                                     <div className='nickDatos'>
                                         <h3>Fecha de la Cita</h3>
-                                        <h4></h4>
+                                        <h4>13/05/2023</h4>
+                                        <h4>4/4/2023</h4>
+                                        <h4>27/2/2023</h4>
+
                                     </div>
                                     <div className='nickDatos'>
                                         <h3>Especialista</h3>
-                                        <h4></h4>
+                                        <h4>Christian Ríos</h4>
+                                        <h4>Christian Ríos</h4>
+                                        <h4>Claudio Guirao</h4>
                                     </div>
                                 </div>
                             </div>
