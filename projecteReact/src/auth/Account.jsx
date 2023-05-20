@@ -28,7 +28,7 @@ export default function Account() {
     
     return (
         <>
-            {! authToken ? (
+            {authToken ? (
                 <div className='positioningCuenta'>
                     <div className='cuentaBox'>
                         <div className='leftCuenta'>

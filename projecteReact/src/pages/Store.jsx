@@ -4,12 +4,10 @@ import Product from "../components/Product";
 function Store() {
   return (
     <div>
-      <h1 className="mt-3">PRODUCTOS</h1>
-      <div className="row g-4 mt-2 mb-4">
+      <h1>PRODUCTOS</h1>
+      <div className="divProductos">
         {arrayProducts.map((product, index) => (
-          <div className="col-md-4" key={index}>
-            <Product product={product}/>
-          </div>
+            <Product key={index} product={product}/>
         ))}
       </div>
     </div>
