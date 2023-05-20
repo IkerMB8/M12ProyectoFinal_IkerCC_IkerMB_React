@@ -25,21 +25,22 @@ export default function Account() {
       }
     }, [location]);
 
+    
     return (
         <>
-            {authToken ? (
+            {! authToken ? (
                 <div className='positioningCuenta'>
                     <div className='cuentaBox'>
                         <div className='leftCuenta'>
                             <div className='arribaLeftCuenta'>
                                 <img className='fotoperfil' src='/sinfoto.jpg'></img>
-                                <h1>Maria Del Carmen García Rodríguez</h1>
+                                <h1>Cristiano Ronaldo Dos Santos Aveiro</h1>
                             </div>
                             <div className='abajoLeftCuenta'>
                                 
                                 <Link to="#datos">Mis Datos</Link>
-                                <a href=''>Pedidos</a>
-                                <a href=''>Citas</a>
+                                <Link to='#pedidos'>Pedidos</Link>
+                                <Link to='#citas'>Citas</Link>
                             </div>
                         </div>
                         <div className='rightCuenta'>
@@ -98,6 +99,31 @@ export default function Account() {
                                     <form>
                                         <input type="button" value="Guardar Cambios" id="btnSend"/> 
                                     </form>
+                                </div>
+                            </div>
+
+                            <div className='datos' id='citas'>
+                                <h2>Historial de Citas</h2>
+                                <div className='arribaDatos'>
+                                    <div className='nickDatos'>
+                                        <h3>Servicio</h3>
+                                        <h4>Corte de Pelo para Niño</h4>
+                                        <h4>Mechas Balayage</h4>
+                                        <h4>Corte de Pelo para Adulto</h4>
+                                    </div>
+                                    <div className='nickDatos'>
+                                        <h3>Fecha de la Cita</h3>
+                                        <h4>13/05/2023</h4>
+                                        <h4>4/4/2023</h4>
+                                        <h4>27/2/2023</h4>
+
+                                    </div>
+                                    <div className='nickDatos'>
+                                        <h3>Especialista</h3>
+                                        <h4>Christian Ríos</h4>
+                                        <h4>Christian Ríos</h4>
+                                        <h4>Claudio Guirao</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
