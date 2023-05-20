@@ -23,7 +23,7 @@ export default function Citas2() {
 
     const getCitas = async () => {
         try {
-            const data = await fetch("http://127.0.0.1:8000/api/dia/reservas", {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/dia/reservas", {
                 headers: {
                     'Accept': 'application/json'
                 },

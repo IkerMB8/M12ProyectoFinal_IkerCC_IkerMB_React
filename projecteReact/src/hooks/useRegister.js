@@ -9,7 +9,7 @@ export default function doLogin() {
     const { email, password, name, secondname, telephone, birthyear } = data;
     console.log(data)
     try {
-      const data = await fetch("http://127.0.0.1:8000/api/register", {
+      const data = await fetch("http://equip11.insjoaquimmir.cat/api/register", {
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -33,7 +33,7 @@ export default function doLogin() {
   const checkAuthToken = async () => {
     if (sessionStorage.getItem('token')){
       try {
-          const data = await fetch("http://127.0.0.1:8000/api/user", {
+          const data = await fetch("http://equip11.insjoaquimmir.cat/api/user", {
               headers: {
                   "Accept": "application/json",
                   "Content-Type": "application/json",

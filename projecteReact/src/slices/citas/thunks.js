@@ -19,7 +19,7 @@ export const crearCita = (id) => {
         }
         console.log(cita)
         try{
-            const data = await fetch("http://127.0.0.1:8000/api/reservas", {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/reservas", {
             headers: {
                 Accept: CONTENT_TYPE_JSON,
                 "Content-Type": CONTENT_TYPE_JSON,
@@ -69,7 +69,7 @@ export const reiniciarCitas = () => {
 export const getServicios = () => {
     return async (dispatch, getState) => {
         try{
-            const data = await fetch("http://127.0.0.1:8000/api/servicios", {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/servicios", {
                 headers: {
                     'Accept': CONTENT_TYPE_JSON
                 },
@@ -90,7 +90,7 @@ export const getServicios = () => {
 export const getTrabajadores = () => {
     return async (dispatch, getState) => {
         try{
-            const data = await fetch("http://127.0.0.1:8000/api/trabajadores", {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/trabajadores", {
                 headers: {
                     'Accept': CONTENT_TYPE_JSON
                 },
