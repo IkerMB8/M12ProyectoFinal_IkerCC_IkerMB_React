@@ -62,7 +62,7 @@ export default function Account() {
                                 </div>
                                 <div className='abajoDatos'>
                                     <form>
-                                        <input type="button" value="Guardar" id="btnSend"/> 
+                                        <input type="button" value="Guardar" id="btnSend1"/> 
                                     </form>
                                 </div>
                                 <hr className='hrCuenta'></hr>
@@ -97,7 +97,7 @@ export default function Account() {
                                         </div>
                                     </div>
                                     <form>
-                                        <input type="button" value="Guardar Cambios" id="btnSend"/> 
+                                        <input type="button" value="Guardar Cambios" id="btnSend2"/> 
                                     </form>
                                 </div>
                             </div>

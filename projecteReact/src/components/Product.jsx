@@ -42,7 +42,7 @@ function Product(props) {
                 className="removeButton"
                 onClick={() => cart.deleteItem(product.id)}
               >
-                <i class="bi bi-cart-fill"></i> Eliminar del carrito
+                <i className="bi bi-cart-fill"></i> Eliminar del carrito
               </button>
             </div>
         ) : (
@@ -50,7 +50,7 @@ function Product(props) {
             className="addButton"
             onClick={() => cart.addItem(product.id)}
           >
-            <i class="bi bi-cart-fill"></i> Añadir al carrito 
+            <i className="bi bi-cart-fill"></i> Añadir al carrito 
           </button>
         )}
       </div>

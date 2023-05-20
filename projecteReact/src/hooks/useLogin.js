@@ -21,7 +21,6 @@ export default function doLogin() {
                     setAuthToken(sessionStorage.getItem('token'));
                     setUsuari(resposta.user.email);
                     setIdUsuari(resposta.user.id);
-                    console.log(resposta.user.ID_Cliente)
                     setIdCliente(resposta.user.ID_Cliente);
                 }else{
                     console.log("La resposta no ha triomfat");
