@@ -9,7 +9,7 @@ export default function Citas() {
     
     return (
         <>
-            {page === 0 ? <Cita /> : <Cita2 />}
+            {page === 0 ? <Cita key={"cita1"} /> : <Cita2 key={"cita2"}/>}
         </>
     );
 }

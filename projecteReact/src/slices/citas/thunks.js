@@ -1,7 +1,7 @@
-import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores } from "./citaSlice";
+import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores, setHorasOcupadas } from "./citaSlice";
 const CONTENT_TYPE_JSON = "application/json";
 
-export const crearCita = (id) => {
+export const crearCita = (id, navigate) => {
     return async (dispatch, getState) => {
         const { Fecha, Email, Telefono, ID_Trabajador, ID_Servicio } = getState().citas;
         let cita = {
@@ -31,8 +31,9 @@ export const crearCita = (id) => {
             const resposta = await data.json();
             if (resposta.success == true) {
                 console.log("Cita Creada Satisfactoriamente");
-                dispatch(setSuccess("Cita Creada Satisfactoriamente"));
-                dispatch(setSuccess(""));
+                alert("La cita se ha creado correctamente");
+                dispatch(setPage(0))
+                navigate("/");
             }else{
                 dispatch(setError(resposta.message));
             }
@@ -104,6 +105,30 @@ export const getTrabajadores = () => {
             }
         } catch (e) {
             dispatch(setError(e));
+        }
+    };
+}
+
+export const getCitas = () => {
+    return async (dispatch, getState) => {
+        try {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/dia/reservas", {
+                headers: {
+                    'Accept': CONTENT_TYPE_JSON
+                },
+                method: "GET"
+            });
+            const resposta = await data.json();
+            console.log(resposta);
+            if (resposta.success === true) {
+                const fechasReservas = resposta.data.map((reserva) => reserva.Fecha);
+                dispatch(setHorasOcupadas(fechasReservas));
+                console.log(fechasReservas);
+            } else {
+                console.log(resposta.message);
+            }
+        } catch (e) {
+            console.log(e);
         }
     };
 }

@@ -7,15 +7,41 @@ import React, { useEffect, useState } from 'react';
 import { getCliente } from "../slices/cuenta/thunks";
 import { useSelector,useDispatch } from "react-redux";
 import useLogin from "../hooks/useLogin";
-
 export default function Account() {
     const { logout } = useLogin();  
     const { Cliente, Citas, Productos, isLoading } = useSelector((state) => state.cuenta);
     let { authToken } = useContext(UserContext);
+    const [data, setData] = useState({});
+    const [isLoading2, setIsLoading2] = useState(true);
+
+    const getCitasUsuario = async () => {
+        try {
+            const data = await fetch("http://equip11.insjoaquimmir.cat/api/user/reservas", {
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": 'Bearer ' + authToken,
+                },
+                method: "GET"
+            });
+            const resposta = await data.json();
+            console.log(resposta);
+            if (resposta.success === true) {
+                console.log(resposta);
+                setData(resposta.data)
+            } else {
+                console.log(resposta.message);
+            }
+        } catch (e) {
+            console.log(e);
+        } finally{
+            setIsLoading2(false);
+        }
+    }
     const dispatch = useDispatch();
     useEffect(() => {
         if (authToken) {
             dispatch(getCliente(authToken));
+            getCitasUsuario();
         }
     }, [authToken]);
 
@@ -126,27 +152,36 @@ export default function Account() {
 
                                     <div className='datos' id='citas'>
                                         <h2>Historial de Citas</h2>
-                                        <div className='arribaDatos'>
-                                            <div className='nickDatos'>
-                                                <h3>Servicio</h3>
-                                                <h4>Corte de Pelo para Niño</h4>
-                                                <h4>Mechas Balayage</h4>
-                                                <h4>Corte de Pelo para Adulto</h4>
-                                            </div>
-                                            <div className='nickDatos'>
-                                                <h3>Fecha de la Cita</h3>
-                                                <h4>13/05/2023</h4>
-                                                <h4>4/4/2023</h4>
-                                                <h4>27/2/2023</h4>
-
-                                            </div>
-                                            <div className='nickDatos'>
-                                                <h3>Especialista</h3>
-                                                <h4>Christian Ríos</h4>
-                                                <h4>Christian Ríos</h4>
-                                                <h4>Claudio Guirao</h4>
-                                            </div>
-                                        </div>
+                                        {isLoading2 ? (
+                                            <></>
+                                        ) : (
+                                            <>
+                                            {data.length === 0 ? (
+                                                <h3>No hay citas disponibles.</h3>
+                                            ) : (
+                                                <div className='arribaDatos'>
+                                                <div className='nickDatos'>
+                                                    <h3>Servicio</h3>
+                                                    {data.map((cita, index) => (
+                                                    <h4 key={index}>{cita.servicio}</h4>
+                                                    ))}
+                                                </div>
+                                                <div className='nickDatos'>
+                                                    <h3>Fecha de la Cita</h3>
+                                                    {data.map((cita, index) => (
+                                                    <h4 key={index}>{cita.fecha}</h4>
+                                                    ))}
+                                                </div>
+                                                <div className='nickDatos'>
+                                                    <h3>Especialista</h3>
+                                                    {data.map((cita, index) => (
+                                                    <h4 key={index}>{cita.trabajador}</h4>
+                                                    ))}
+                                                </div>
+                                                </div>
+                                            )}
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </div>

@@ -229,3 +229,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.error{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 139, 139);
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 40px;
+}

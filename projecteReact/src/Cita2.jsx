@@ -3,14 +3,16 @@ import './citas2.css';
 import Accordion from './Accordion';
 import { useState } from 'react';
 import { setFecha } from "./slices/citas/citaSlice";
-import { crearCita, reiniciarCitas } from "./slices/citas/thunks";
-import { useDispatch } from "react-redux";
+import { crearCita, reiniciarCitas, getCitas } from "./slices/citas/thunks";
+import { useDispatch, useSelector } from "react-redux";
 import { UserContext } from "./userContext";
 import { useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 
-export default function Citas2() {
-    let { authToken, setAuthToken, usuari, setUsuari, idUsuari, setIdUsuari, idCliente, setIdCliente } = useContext(UserContext);
-    const [horasOcupadas, setHorasOcupadas] = useState([]);
+export default function Cita2() {
+    let { idCliente } = useContext(UserContext);
+    const { horasOcupadas } = useSelector((state) => state.citas);
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [openIndex, setOpenIndex] = useState(-1);
     const fechaActual = new Date();
@@ -21,30 +23,16 @@ export default function Citas2() {
         fechas.push(fecha);
     }
 
-    const getCitas = async () => {
-        try {
-            const data = await fetch("http://equip11.insjoaquimmir.cat/api/dia/reservas", {
-                headers: {
-                    'Accept': 'application/json'
-                },
-                method: "GET"
-            });
-            const resposta = await data.json();
-            console.log(resposta);
-            if (resposta.success === true) {
-                const fechasReservas = resposta.data.map((reserva) => reserva.Fecha);
-                setHorasOcupadas(fechasReservas);
-                console.log(fechasReservas);
-            } else {
-                console.log(resposta.message);
-            }
-        } catch (e) {
-            console.log(e);
-        }
-    };
+    
+    const [activeButton, setActiveButton] = useState(null);
+    const handleButtonClick = (fecha, hora) => {
+        dispatch(setFecha(`${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${hora}`, this));
+        setActiveButton(hora);
+      };
+    
 
     useEffect(() => {
-        getCitas();
+        dispatch(getCitas());
     }, []);
 
     const renderHorasDisponibles = (fecha) => {
@@ -75,7 +63,7 @@ export default function Citas2() {
         }
 
         return horasFiltradas.map((hora) => (
-            <button className="btn horaDisponible m-2" onClick={() => dispatch(setFecha(`${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${hora}`, this))}>
+            <button className={`btn horaDisponible m-2 ${activeButton === hora ? 'active' : ''}`} onClick={() => handleButtonClick(fecha, hora)}>
                 {hora}
             </button>
         ));
@@ -99,7 +87,7 @@ export default function Citas2() {
                 <div className="col">
                     <div className="text-center">
                         <input id="especialistaId" name="especialistaId" type="hidden" value="702" />
-                        <a className="btn btn-success btn-large" style={{ color: "white" }} onClick={() => dispatch(crearCita(idCliente))}>Confirmar</a>
+                        <a className="btn btn-success btn-large" style={{ color: "white" }} onClick={() => dispatch(crearCita(idCliente,navigate))}>Confirmar</a>
                         <br />
                         <a href="#" style={{ color: "white" }} type="button" className="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
                     </div>

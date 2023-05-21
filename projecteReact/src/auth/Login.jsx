@@ -35,6 +35,7 @@ export default function Login({setCanvi}) {
                                     message: "Inserte un email válido" 
                             }})}/>
                         </label>
+                        {errors.email ? <div className="error">{errors.email.message}</div> : <></>}
                         <label className="password">
                             <span className="label-text">Password</span>
                             <input type="password" placeholder="Password" {...register("password", {
@@ -52,6 +53,7 @@ export default function Login({setCanvi}) {
                                     message: "La contraseña tiene que contener al menos una minúscula, una mayuscula, i un número" 
                             }})}/>
                         </label>
+                        {errors.password ? <div className="error">{errors.password.message}</div> : <></>}
                         <div className="text-center">
                             <button className="submit" name="register">Iniciar Sesión</button>
                         </div>

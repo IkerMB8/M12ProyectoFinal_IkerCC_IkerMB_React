@@ -19,13 +19,16 @@ export default function Header() {
     const openModalBtn = document.getElementById("openModalBtn");
     const modal = document.getElementById("exampleModal");
     const closeBtn = document.getElementsByClassName("close")[0];
+    const bodyElement = document.getElementsByTagName("body")[0];
 
     openModalBtn.addEventListener("click", function () {
       modal.style.display = "block";
+      bodyElement.classList.add("modal-open");
     });
 
     closeBtn.addEventListener("click", function () {
       modal.style.display = "none";
+      bodyElement.classList.remove("modal-open");
     });
 
     window.addEventListener("click", function (event) {

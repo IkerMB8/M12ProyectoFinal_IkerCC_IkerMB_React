@@ -1,18 +1,25 @@
-import  React  from 'react';
 import './citas.css';
 import { useForm } from "react-hook-form";
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from "react-redux";
 import { primPagCitas } from "./slices/citas/thunks";
 import { UserContext } from "./userContext";
 import { useContext } from "react";
 import { useSelector } from "react-redux";
+import { getCliente } from "./slices/cuenta/thunks";
 
 export default function Cita() { 
     const { Servicios, Trabajadores } = useSelector((state) => state.citas);
+    const { Cliente } = useSelector((state) => state.cuenta);
     let { authToken, setAuthToken, usuari, setUsuari } = useContext(UserContext);
     const dispatch = useDispatch();
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => dispatch(primPagCitas(authToken,data));
+    useEffect(() => {
+        if (authToken) {
+            dispatch(getCliente(authToken));
+        }
+    }, [authToken]);
     
   return (
     <>
@@ -21,7 +28,7 @@ export default function Cita() {
             <form  onSubmit={handleSubmit(onSubmit)}>           
                 <div className="form-group">
                     <label htmlFor="emailUsuario" className="form-label">Introduce tu email</label>
-                    <input id="emailUsuario" type="email" className="form-control" required="" placeholder="Email" {...register("email", {
+                    <input id="emailUsuario" type="email" className="form-control" required="" placeholder="Email" defaultValue={usuari} {...register("email", {
                                 required: "Este campo és obligatorio",
                                 minLength: {
                                     value: 6,
@@ -39,7 +46,7 @@ export default function Cita() {
                 </div>      
                 <div className="form-group">
                     <label htmlFor="telefonoUsuario" className="form-label">Introduce tu telefono</label>
-                    <input id="telefonoUsuario" type="number" className="form-control" required="" placeholder="Telefono" {...register("telefono", {
+                    <input id="telefonoUsuario" type="number" className="form-control" required="" placeholder="Telefono" defaultValue={Cliente.Telefono} {...register("telefono", {
                                 required: "Este campo és obligatorio",
                                 minLength: {
                                     value: 9,

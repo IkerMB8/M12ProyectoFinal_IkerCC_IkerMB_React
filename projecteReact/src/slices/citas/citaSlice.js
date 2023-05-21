@@ -12,7 +12,8 @@ const initialState = {
     Error: "",
     Servicios: [],
     Trabajadores: [],
-    IsLoading: true
+    IsLoading: true,
+    horasOcupadas: []
 }
 
 export const citaSlice = createSlice({
@@ -54,10 +55,13 @@ export const citaSlice = createSlice({
         },
         setIsLoading: (state,action) => {
             state.IsLoading = action.payload;
+        },
+        setHorasOcupadas: (state,action) => {
+            state.horasOcupadas = action.payload;
         }
     }
 });
 
-export const { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores, setIsLoading } = citaSlice.actions;
+export const { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores, setIsLoading, setHorasOcupadas } = citaSlice.actions;
 
 export default citaSlice.reducer
