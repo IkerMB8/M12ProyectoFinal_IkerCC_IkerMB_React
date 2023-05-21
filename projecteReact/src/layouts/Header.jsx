@@ -149,7 +149,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/contacta" className="menu-link">
+                  <Link to="/#Contacta" className="menu-link">
                     <span>Contacta</span>
                   </Link>
                 </li>

@@ -224,6 +224,34 @@
 @media only screen and (max-width: 600px)  {
 
   .chracademy{
-    height: 2355px;
+    height: 2155px;
+  }
+  .abajoCHR{
+    height: 58%;
   }
 }
+
+@media only screen and (max-width: 516px)  {
+
+  .chracademy{
+    height: 2140px;
+    width: 80%;
+  }
+
+  .abajoCHR{
+    height: 60%;
+  }
+
+}  
+
+@media only screen and (max-width: 434px)  {
+
+  .chracademy{
+    height: 3000px;
+    width: 80%;
+  }
+
+  .abajoCHR{
+    height: 67%;
+  }
+}  

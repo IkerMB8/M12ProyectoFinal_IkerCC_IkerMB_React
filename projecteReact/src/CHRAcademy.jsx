@@ -36,7 +36,7 @@ export default function CHRAcademy() {
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
                                         <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
-                                        <a className='raise' href='#linkContacta'>Más Información</a>
+                                        <a className='raise' href='#Contacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
@@ -54,7 +54,7 @@ export default function CHRAcademy() {
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
                                         <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
-                                        <a className='raise' href='#linkContacta'>Más Información</a>
+                                        <a className='raise' href='#Contacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
@@ -72,7 +72,7 @@ export default function CHRAcademy() {
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
                                         <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
-                                        <a className='raise' href='#linkContacta'>Más Información</a>
+                                        <a className='raise' href='#Contacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>
@@ -90,7 +90,7 @@ export default function CHRAcademy() {
                                         <p><span className='bold'>Horario: </span>9.30H - 17.30H</p>
                                         <p><span className='bold'>Incluye: </span>Maniquíes. Los asistentes deberán traer sus propias herramientas (cepillos, peines, tijeras, secador,..)</p>
                                         <p><span className='bold'>Formato: </span>Teoría, Demostración, Lunch Break,  Workshop en Maniquíes</p>
-                                        <a className='raise' href='#linkContacta'>Más Información</a>
+                                        <a className='raise' href='#Contacta'>Más Información</a>
                                     </div>
                                 </div>
                             </li>

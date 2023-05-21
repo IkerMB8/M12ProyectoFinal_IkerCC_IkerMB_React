@@ -113,3 +113,21 @@
 }
 
 }
+
+@media only screen and (max-width: 562px)  {
+  .colecciones h1{
+    color: black;
+    margin: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+  }
+
+  .coleccion{
+    margin-bottom: 40%;
+    width: 100%;
+  }
+
+  .slider{
+    width: 100%;
+  }
+}

@@ -75,3 +75,72 @@
 .p_Servicios{
     color: #fff;
 }
+
+@media only screen and (max-width: 410px)  {
+    .bg_serv{
+        display: block;
+        padding: 15px;
+    }
+
+    .servicios_div_1{
+        width: 85%;
+        gap: 4%;
+        height: 830px;
+        display: flex;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        background-image: url(/fondoOscuro.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .div_Servicios_izq{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 67%;
+        padding: 0;
+    }
+
+    .h1_Servicios{
+        color: #fff;
+        height: 100px;
+        margin: 0;
+        text-shadow: 1px 1px 1px rgb(128, 128, 128), 1px 2px 1px rgb(128, 128, 128), 1px 3px 1px rgb(128, 128, 128), 1px 4px 1px rgb(128, 128, 128), 1px 5px 1px rgb(128, 128, 128), 1px 6px 1px rgb(114, 114, 114), 1px 7px 1px rgb(128, 128, 128), 1px 8px 1px rgb(121, 121, 121), 1px 9px 1px rgb(139, 139, 139), 1px 18px 6px rgb(16 16 16 / 40%), 1px 30px 60px rgb(16 16 16 / 40%);
+    }
+    
+    .servicios_div_2{
+        width: 85%;
+        gap: 4%;
+        height: 830px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        background-image: url(/fondoOscuro2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .div_Servicios_der{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 45%;
+        padding: 0;
+    }
+
+    .img_Servicios{
+        height: 375px;
+        width: 81%;
+    }
+  }
