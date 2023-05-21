@@ -6,8 +6,10 @@ import { Link, useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { getCliente } from "../slices/cuenta/thunks";
 import { useSelector,useDispatch } from "react-redux";
+import useLogin from "../hooks/useLogin";
 
 export default function Account() {
+    const { logout } = useLogin();  
     const { Cliente, Citas, Productos, isLoading } = useSelector((state) => state.cuenta);
     let { authToken } = useContext(UserContext);
     const dispatch = useDispatch();
@@ -60,7 +62,7 @@ export default function Account() {
                                         <Link to="#datos">Mis Datos</Link>
                                         <Link to='#pedidos'>Pedidos</Link>
                                         <Link to='#citas'>Citas</Link>
-                                        <button style={{marginTop: "5%", fontWeight: "600",marginLeft: "15%", borderRadius: "10px"}}>Cerrar Sesión</button>
+                                        <button style={{marginTop: "5%", fontWeight: "600",marginLeft: "15%", borderRadius: "10px"}} onClick={(e) => {logout(e);}}>Cerrar Sesión</button>
                                     </div>
                                 </div>
                                 <div className='rightCuenta'>

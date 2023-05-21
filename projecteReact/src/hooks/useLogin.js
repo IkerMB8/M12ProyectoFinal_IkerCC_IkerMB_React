@@ -63,5 +63,30 @@ export default function doLogin() {
     }
   };
 
-  return { doLogin, error, setError, checkAuthToken };
+  const logout = async (e) => {
+    e.preventDefault();
+  
+    // Enviam dades a l'aPI i recollim resultat
+    try {
+      const data = await fetch("http://equip11.insjoaquimmir.cat/api/logout", {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Authorization": 'Bearer '  + authToken,
+      
+        },
+        method: "POST",
+      })
+
+      const resposta = await data.json();
+      if (resposta.success === true){
+        setAuthToken('');
+        sessionStorage.removeItem('token');
+      } 
+    } catch {
+      console.log("Error");
+    }
+  };
+
+  return { doLogin, error, setError, checkAuthToken, logout };
 }
