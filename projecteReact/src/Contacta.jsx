@@ -1,25 +1,11 @@
 import './contacta.css';
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function Contacta() {
-  const [formData, setFormData] = useState({
-    names: '',
-    phone: '',
-    email: '',
-    mensaje: ''
-  });
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
+  const onSubmit = async (formData) => {
     try {
       const response = await fetch('http://equip11.insjoaquimmir.cat/api/send-email', {
         method: 'POST',
@@ -30,22 +16,12 @@ export default function Contacta() {
       });
 
       if (response.ok) {
-        // Mostrar mensaje de éxito al usuario
         alert('Mensaje enviado correctamente');
-
-        // Reiniciar los valores del formulario
-        setFormData({
-          names: '',
-          phone: '',
-          email: '',
-          mensaje: ''
-        });
+        reset();
       } else {
-        // Manejar el caso en que la respuesta no sea exitosa
         throw new Error('Error al enviar el mensaje');
       }
     } catch (error) {
-      // Manejar cualquier error que ocurra durante el envío del formulario
       console.error(error);
       alert('Error al enviar el mensaje');
     }
@@ -74,20 +50,38 @@ export default function Contacta() {
               </div>
             </section>
           </section>
-          <form className="form_contact" onSubmit={handleSubmit}>
+          <form className="form_contact" onSubmit={handleSubmit(onSubmit)}>
             <h2>Envia un mensaje</h2>
             <div className="user_info">
-              <label htmlFor="names">Nombres *</label>
-              <input type="text" id="names" name="names" value={formData.names} onChange={handleChange} />
+              <label htmlFor="name">Nombre <span style={{color:"red"}}>*</span></label>
+              <input type="text" id="name" {...register('name', { required: "Este campo es obligatorio" })} />
+              {errors.name && <span className="error">{errors.name.message}</span>}
 
               <label htmlFor="phone">Teléfono</label>
-              <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} />
+              <input type="text" id="phone" {...register('phone')} />
+              {errors.phone && <span className="error">{errors.phone.message}</span>}
 
-              <label htmlFor="email">Correo eléctronico *</label>
-              <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} />
+              <label htmlFor="email">Correo eléctronico <span style={{color:"red"}}>*</span></label>
+              <input type="text" id="email" 
+                  {...register("email", {
+                    required: "Este campo es obligatorio",
+                    minLength: {
+                        value: 6,
+                        message: "El email tiene que tener mínimo 6 caracteres"
+                    },
+                    maxLength: {
+                        value: 40,
+                        message: "El email no puede contener mas de 40 caracteres"
+                    },
+                    pattern: {
+                        value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                        message: "Email no válido" 
+                }})} />
+              {errors.email && <span className="error">{errors.email.message}</span>}
 
-              <label htmlFor="mensaje">Mensaje *</label>
-              <textarea className='textoMsj' id="mensaje" name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
+              <label htmlFor="mensaje">Mensaje <span style={{color:"red"}}>*</span></label>
+              <textarea className='textoMsj' id="mensaje" {...register('mensaje', { required: "Este campo es obligatorio" })}></textarea>
+              {errors.mensaje && <span className="error">{errors.mensaje.message}</span>}
 
               <input className="botonContacto" type="submit" value="Enviar Mensaje" id="btnSend" />
             </div>
