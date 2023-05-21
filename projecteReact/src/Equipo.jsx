@@ -8,10 +8,10 @@ export default function Equipo() {
                     <h1 >NUESTRO EQUIPO</h1>
                     <h2>PELUQUERÍA EN VILANOVA I LA GELTRÚ</h2>
                     <div className='square'>
-                        <div className='evento-individual chris'>
+                        <div className='evento-individual blanconegro'>
                             <img src="../Christian-Rios.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayChris">
-                                <div className="chris2">
+                            <div className="overlayGeneral">
+                                <div className="individual">
                                     <h1 className='names'>
                                         CHRISTIAN RÍOS
                                     </h1>
@@ -23,10 +23,10 @@ export default function Equipo() {
                                 </div>
                             </div>
                         </div>
-                        <div className='evento-individual claudio'>
+                        <div className='evento-individual blanconegro'>
                             <img src="../Claudio.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayClaudio">
-                                <div className="claudio2">
+                            <div className="overlayGeneral">
+                                <div className="individual">
                                     <h1 className='names'>
                                         CLAUDIO GUIRAO  
                                     </h1>
@@ -37,10 +37,10 @@ export default function Equipo() {
                                 </div>
                             </div>
                         </div>
-                        <div className='evento-individual jana'>
+                        <div className='evento-individual blanconegro'>
                             <img src="../Jana.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />
-                            <div className="overlayJana">
-                                <div className="jana2">
+                            <div className="overlayGeneral">
+                                <div className="individual">
                                     <h1 className='names'>
                                         JANA FEIXAS
                                     </h1>

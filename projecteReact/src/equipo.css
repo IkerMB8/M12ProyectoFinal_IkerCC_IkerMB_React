@@ -45,7 +45,7 @@ h2{
     justify-content: center;
 }
 
-.jana{
+.blanconegro{
     filter: grayscale(100%);
 }
 
@@ -62,29 +62,7 @@ h2{
     padding-right: 15px;
     text-align: justify;
 }
-.overlayChris {
-    background-color: rgba(20,20,20,.7);
-    position: absolute;
-    width: 26.7%;
-    height: 43%;
-    opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-.overlayClaudio {
-    background-color: rgba(20,20,20,.7);
-    position: absolute;
-    width: 26.7%;
-    height: 43%;
-    opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-.overlayJana {
+.overlayGeneral {
     background-color: rgba(20,20,20,.7);
     position: absolute;
     width: 100%;
@@ -96,49 +74,11 @@ h2{
     transition: all .2s ease-in-out;
 }
 
-.overlayChris + .foto_esdeveniment{
-    opacity: 0.5;
-}
-.overlayClaudio + .foto_esdeveniment{
-    opacity: 0.5;
-}
-.overlayJana + .foto_esdeveniment{
+.overlayGeneral + .foto_esdeveniment{
     opacity: 0.5;
 }
 
-.chris2 {
-    /* opacity: 0; */
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    z-index: 2;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.claudio2 {
-    /* opacity: 0; */
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    z-index: 2;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.jana2 {
+.individual {
     /* opacity: 0; */
     position: absolute;
     overflow: hidden;
@@ -194,34 +134,12 @@ h2{
     margin-top: -80px;
 }
 
-.evento-individual:hover .overlayChris {
-    opacity: 1;
-}
-.evento-individual:hover .overlayClaudio {
-    opacity: 1;
-}
-.evento-individual:hover .overlayJana {
+.evento-individual:hover .overlayGeneral {
     opacity: 1;
 }
 
 
 @media only screen and (max-width: 1184px)  {
-
-    .overlayChris{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 44%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
-
-    .overlayClaudio{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 44%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
 
     .square{
         display: flex;
@@ -237,22 +155,6 @@ h2{
 
 @media only screen and (max-width: 850px)  {
 
-    .overlayChris{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 52%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
-
-    .overlayClaudio{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 52%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
-
     .square{
         display: flex;
         flex-direction: column;
@@ -267,22 +169,6 @@ h2{
 
 @media only screen and (max-width: 724px)  {
 
-    .overlayChris{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 69%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
-
-    .overlayClaudio{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 69%;
-        height: 47.2%;
-        transition: all .2s ease-in-out;
-    }
-
     .square{
         display: flex;
         flex-direction: column;
@@ -296,22 +182,6 @@ h2{
 }
 
 @media only screen and (max-width: 500px)  {
-
-    .overlayChris{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 80%;
-        height: 40.4%;
-        transition: all .2s ease-in-out;
-    }
-
-    .overlayClaudio{
-        background-color: rgba(20,20,20,.7);
-        position: absolute;
-        width: 80%;
-        height: 40.4%;
-        transition: all .2s ease-in-out;
-    }
 
     .square{
         display: flex;
