@@ -333,3 +333,9 @@ body.modal-open {overflow: hidden;}
 .bi-door-open-fill{
     color: white !important;
 }
+
+@media (max-width: 1160px) {
+    #site-navigation-wrap{
+        display: none;
+    }
+}
