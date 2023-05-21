@@ -38,8 +38,8 @@ export default function Contacta() {
             </section>
             <section className="info_items">
               <div className='infoContacta'>
-                <p><i className="bi bi-house-door-fill"></i> Carrer dels Picapedrers, 27, Vilanova i la Geltrú</p>
-                <p><i className="bi bi-telephone-fill"></i>937 68 28 69</p>
+                <p><i className="bi bi-house-door-fill"></i> Carrer dels Picapedrers, 27,<br/> Vilanova i la Geltrú</p>
+                <p><i className="bi bi-telephone-fill"></i> 937 68 28 69</p>
               </div>
               <hr className='hrMapa'></hr>
               <div>

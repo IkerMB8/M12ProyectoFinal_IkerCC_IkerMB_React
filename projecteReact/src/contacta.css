@@ -102,8 +102,6 @@
 }
 
 .info_items p{
-    display: flex;
-    align-items: center;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -276,7 +274,7 @@ form.form_contact input[type="button"]:hover{
 
 @media only screen and (max-width: 1330px)  {
     .form_wrap {
-        width: 59%;
+        width: 80%;
         height: 960px;
         margin: 50px auto;
         display: flex;

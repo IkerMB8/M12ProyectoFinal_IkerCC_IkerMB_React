@@ -86,4 +86,7 @@ ul.slider li:target {
     color: white;
 }
 
-
+.divPremios{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}

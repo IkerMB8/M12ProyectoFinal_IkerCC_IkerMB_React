@@ -187,6 +187,9 @@
     color: white;
     margin: 0;
   }
+  .pageIndex{
+    color: black;
+  }
 
 
 @media only screen and (max-width: 1630px)  {
@@ -201,6 +204,9 @@
 }
 
 @media only screen and (max-width: 1270px)  {
+  .servicios_div_1, .servicios_div_2{
+   width: 85%;
+  }
 
   .chracademy{
     width: 85%;
@@ -213,10 +219,15 @@
   .chracademy{
     height: 1750px;
   }
+  button.raise, .pageIndex{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 751px)  {
-
+ .servicios_div_1, .servicios_div_2{
+  width: 100%;
+ }
   .chracademy{
     height: 2000px;
     width: 100%;
