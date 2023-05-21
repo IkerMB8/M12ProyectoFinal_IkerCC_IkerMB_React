@@ -1,0 +1,62 @@
+.cancel h1 {
+    color: #e94e4e;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cancel p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.cancel i {
+    color: #e94e4e;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left: -15px;
+}
+
+.cancel .carta {
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 3px 11px #C8D0D8;
+    display: inline-block;
+    margin: 0 auto;
+    margin: 50px;
+    width: 40%;
+}
+
+.cancel a{
+    background-color: #e94e4e;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.cancel a:hover{
+    background-color: #bb3f3f;
+}
+
+/* Media queries */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .cancel .carta {
+        width: 80%;
+    }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 600px) {
+
+    .cancel .carta {
+        width: 80%;
+    }
+}
