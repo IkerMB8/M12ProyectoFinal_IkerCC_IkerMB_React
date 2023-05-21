@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.css';
+import { UserContext } from "../userContext";
 import { useContext } from "react";
 import { Cart } from "../Cart";
 import CartProduct from "../components/CartProduct";
+import useLogin from "../hooks/useLogin";
 
 export default function Header() {
   const location = useLocation();
+  const { logout } = useLogin();  
+  let { authToken } = useContext(UserContext);
 
   const scrollToElement = (id) => {
     const element = document.getElementById(id);
@@ -165,6 +169,11 @@ export default function Header() {
                       <i className="bi bi-person-fill" />
                     </span>
                   </Link>
+                  {authToken ? (
+                  <ul class="submenu">
+                    <li><button onClick={(e) => {logout(e);}}><i class="bi bi-door-open-fill"></i></button></li>
+                  </ul>
+                  ) : ( <></>)}
                 </li>
               </ul>
             </nav>

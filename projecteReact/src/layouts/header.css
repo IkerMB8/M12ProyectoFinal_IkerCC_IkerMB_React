@@ -296,3 +296,40 @@ a:hover{color:#d5cdc0;}
 .mensajevacio2{font-size:1.0625rem;line-height:1.5rem;font-weight:400;letter-spacing:normal;margin-top:0.5rem;color:rgb(115, 115, 115);}
 .botonexplorar{border-radius: 8px; margin: 20px;}
 body.modal-open {overflow: hidden;}
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 100%;
+    padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.main-menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.main-menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.main-menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.main-menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+.bi-door-open-fill{
+    color: white !important;
+}
