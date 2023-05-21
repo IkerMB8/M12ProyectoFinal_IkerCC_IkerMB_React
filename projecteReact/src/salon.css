@@ -9,7 +9,13 @@
 .h1Salon{
     color: black;
 }
-  
+
+@media only screen and (max-width: 1184px)  {
+    .carousel-item {
+        --width: clamp(270px, 30vw, 300px) !important;
+        --height: clamp(430px, 40vw, 400px) !important;
+    }
+}
 .carousel-item {
     --items: 10;
     --width: clamp(150px, 30vw,  300px);

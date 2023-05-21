@@ -293,22 +293,7 @@ button:focus-visible {
 }
 
 
-@media only screen and (max-width: 586px)  {
-  .divVideo p{
-    top: 85%;
-  }
-}
-
-@media only screen and (max-width: 400px)  {
-  .divVideo p{
-    top: 80%;
-  }
-}
-
 @media only screen and (max-width: 388px)  {
-  .divVideo p{
-    top: 80%;
-  }
 
   .divVideo__titulo_h2{
     color: white;
