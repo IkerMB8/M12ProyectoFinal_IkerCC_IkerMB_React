@@ -203,6 +203,7 @@
 @media only screen and (max-width: 1270px)  {
 
   .chracademy{
+    width: 85%;
     height: 1510px;
   }
 }
@@ -218,6 +219,7 @@
 
   .chracademy{
     height: 2000px;
+    width: 100%;
   }
 }
 
@@ -235,7 +237,6 @@
 
   .chracademy{
     height: 2140px;
-    width: 80%;
   }
 
   .abajoCHR{
@@ -248,7 +249,6 @@
 
   .chracademy{
     height: 3000px;
-    width: 80%;
   }
 
   .abajoCHR{
