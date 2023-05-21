@@ -287,7 +287,7 @@ button:focus-visible {
 
 .divVideo p{
   position: absolute;
-  top: 92%;
+  top: 96%;
   color: rgba(255, 255, 255, 0.733);
 
 }
@@ -295,13 +295,13 @@ button:focus-visible {
 
 @media only screen and (max-width: 586px)  {
   .divVideo p{
-    top: 120%;
+    top: 110%;
   }
 }
 
 @media only screen and (max-width: 400px)  {
   .divVideo p{
-    top: 142%;
+    top: 122%;
   }
 }
 
