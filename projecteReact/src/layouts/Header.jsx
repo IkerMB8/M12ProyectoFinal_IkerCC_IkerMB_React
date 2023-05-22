@@ -114,7 +114,7 @@ export default function Header() {
             <nav id="site-navigation" className="navigation main-navigation clr menumvl" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
                 <li className="menu-item">
-                  <Link to="" className="menu-link" id='button-menu'>
+                  <Link className="menu-link" id='button-menu'>
                     <i className="bi bi-plus-square-fill"> Menu</i> 
                   </Link>
                 </li>
