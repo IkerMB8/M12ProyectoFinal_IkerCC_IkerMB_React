@@ -39,42 +39,76 @@ export default function Cita2() {
     }, []);
 
     const renderHorasDisponibles = (fecha, index) => {
-        const horasDisponibles = [
-            '09:00:00',
-            '10:00:00',
-            '11:00:00',
-            '12:00:00'
-        ];
-
+        const horasDisponibles = ['09:00:00', '10:00:00', '11:00:00', '12:00:00'];
+      
         const horasOcupadasFecha = horasOcupadas.filter((horaOcupada) => {
+          const fechaOcupada = new Date(horaOcupada);
+          return (
+            fechaOcupada.getFullYear() === fecha.getFullYear() &&
+            fechaOcupada.getMonth() === fecha.getMonth() &&
+            fechaOcupada.getDate() === fecha.getDate()
+          );
+        });
+      
+        let horaInicio = new Date(
+          fecha.getFullYear(),
+          fecha.getMonth(),
+          fecha.getDate(),
+          9,
+          0,
+          0
+        ); // Hora de inicio de la peluquería
+        const horaFin = new Date(
+          fecha.getFullYear(),
+          fecha.getMonth(),
+          fecha.getDate(),
+          13,
+          0,
+          0
+        ); // Hora de fin de la peluquería
+      
+        const horasFiltradas = [];
+      
+        while (horaInicio < horaFin) {
+          const hora = horaInicio.getHours().toString().padStart(2, '0') + ':' +
+            horaInicio.getMinutes().toString().padStart(2, '0') + ':' +
+            horaInicio.getSeconds().toString().padStart(2, '0');
+      
+          const fechaHora = new Date(fecha.getFullYear(), fecha.getMonth(), fecha.getDate(), hora.split(':')[0], hora.split(':')[1], hora.split(':')[2]);
+          
+          const duracionServicio = 60; // Duración del servicio en minutos (valor ficticio, debes obtenerlo de tu API)
+          const duracionTotal = duracionServicio + 15;
+      
+          const horaFinServicio = new Date(fechaHora.getTime() + duracionTotal * 60000); // Suma la duración total del servicio en milisegundos
+          
+          const ocupada = horasOcupadasFecha.some((horaOcupada) => {
             const fechaOcupada = new Date(horaOcupada);
-            return fechaOcupada.getFullYear() === fecha.getFullYear() &&
-                fechaOcupada.getMonth() === fecha.getMonth() &&
-                fechaOcupada.getDate() === fecha.getDate();
-        });
-
-        const horasFiltradas = horasDisponibles.filter((hora) => {
-            const fechaHora = new Date(fecha.getFullYear(), fecha.getMonth(), fecha.getDate(), hora.split(':')[0], hora.split(':')[1], hora.split(':')[2]);
-            return !horasOcupadasFecha.some((horaOcupada) => {
-                const fechaOcupada = new Date(horaOcupada);
-                return fechaOcupada.getTime() === fechaHora.getTime();
-            });
-        });
-
-        if (horasFiltradas.length === 0) {
-            return <p style={{color:"black"}}>No hay horas disponibles para esta fecha.</p>;
+            return fechaHora <= fechaOcupada && fechaOcupada < horaFinServicio;
+          });
+      
+          if (!ocupada) {
+            horasFiltradas.push(hora);
+          }
+      
+          horaInicio = horaFinServicio;
         }
-
+      
+        if (horasFiltradas.length === 0) {
+          return <p style={{ color: 'black' }}>No hay horas disponibles para esta fecha.</p>;
+        }
+      
         return horasFiltradas.map((hora) => (
-            <button
-                key={hora}
-                className={`btn horaDisponible m-2 ${activeButtons[index] === hora ? 'active' : ''}`}
-                onClick={() => handleButtonClick(fecha, hora, index)}
-            >
-                {hora}
-            </button>
+          <button
+            key={hora}
+            className={`btn horaDisponible m-2 ${
+              activeButtons[index] === hora ? 'active' : ''
+            }`}
+            onClick={() => handleButtonClick(fecha, hora, index)}
+          >
+            {hora}
+          </button>
         ));
-    };
+      };      
 
     const handleConfirmarClick = () => {
         if (Fecha === null || Fecha === "") {
