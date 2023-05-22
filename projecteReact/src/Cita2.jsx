@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Cita2() {
     let { idCliente } = useContext(UserContext);
-    const { horasOcupadas } = useSelector((state) => state.citas);
+    const { horasOcupadas, Fecha } = useSelector((state) => state.citas);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [openIndex, setOpenIndex] = useState(-1);
@@ -24,18 +24,21 @@ export default function Cita2() {
     }
 
     
-    const [activeButton, setActiveButton] = useState(null);
-    const handleButtonClick = (fecha, hora) => {
+    const [activeButtons, setActiveButtons] = useState({});
+    const handleButtonClick = (fecha, hora, index) => {
         dispatch(setFecha(`${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${hora}`, this));
-        setActiveButton(hora);
-      };
+        setActiveButtons((prevState) => ({
+            ...prevState,
+            [index]: hora,
+        }));
+    };
     
 
     useEffect(() => {
         dispatch(getCitas());
     }, []);
 
-    const renderHorasDisponibles = (fecha) => {
+    const renderHorasDisponibles = (fecha, index) => {
         const horasDisponibles = [
             '09:00:00',
             '10:00:00',
@@ -63,33 +66,48 @@ export default function Cita2() {
         }
 
         return horasFiltradas.map((hora) => (
-            <button className={`btn horaDisponible m-2 ${activeButton === hora ? 'active' : ''}`} onClick={() => handleButtonClick(fecha, hora)}>
+            <button
+                key={hora}
+                className={`btn horaDisponible m-2 ${activeButtons[index] === hora ? 'active' : ''}`}
+                onClick={() => handleButtonClick(fecha, hora, index)}
+            >
                 {hora}
             </button>
         ));
     };
 
+    const handleConfirmarClick = () => {
+        if (Fecha === null || Fecha === "") {
+            alert('Por favor, selecciona una fecha.')
+            return;
+        }
+
+        dispatch(crearCita(idCliente, navigate));
+    };
+
     return (
         <>
-            {fechas.map((fecha, index) => (
-                <div key={index}>
-                    <Accordion title={`${fecha.getDate()}-${fecha.getMonth() + 1}-${fecha.getFullYear()}`} index={index} openIndex={openIndex} setOpenIndex={setOpenIndex}>
-                        <div className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div className="card-body">
-                                {renderHorasDisponibles(fecha)}
+            <div className='divCita2'>
+                {fechas.map((fecha, index) => (
+                    <div key={index}>
+                        <Accordion title={`${fecha.getDate()}-${fecha.getMonth() + 1}-${fecha.getFullYear()}`} index={index} openIndex={openIndex} setOpenIndex={setOpenIndex}>
+                            <div className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div className="card-body">
+                                    {renderHorasDisponibles(fecha, index)}
+                                </div>
                             </div>
-                        </div>
-                    </Accordion>
-                </div>
-            ))}
+                        </Accordion>
+                    </div>
+                ))}
 
-            <div className="row py-4">
-                <div className="col">
-                    <div className="text-center">
-                        <input id="especialistaId" name="especialistaId" type="hidden" value="702" />
-                        <a className="btn btn-success btn-large" style={{ color: "white" }} onClick={() => dispatch(crearCita(idCliente,navigate))}>Confirmar</a>
-                        <br />
-                        <a href="#" style={{ color: "white" }} type="button" className="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
+                <div className="row py-4">
+                    <div className="col">
+                        <div className="text-center">
+                            <input id="especialistaId" name="especialistaId" type="hidden" value="702" />
+                            <a className="btn btn-success btn-large" style={{ color: "white" }} onClick={() => handleConfirmarClick()}>Confirmar</a>
+                            <br />
+                            <a href="#" style={{ color: "white" }} type="button" className="btn btn-danger mt-2" id="boton_modal_cita" onClick={() => dispatch(reiniciarCitas())}>Tornar</a>
+                        </div>
                     </div>
                 </div>
             </div>

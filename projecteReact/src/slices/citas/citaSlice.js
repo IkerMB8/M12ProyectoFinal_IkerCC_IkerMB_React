@@ -8,7 +8,6 @@ const initialState = {
     ID_Trabajador: 0,
     ID_Servicio: 0,
     page: 0,
-    Success: "",
     Error: "",
     Servicios: [],
     Trabajadores: [],
@@ -43,9 +42,6 @@ export const citaSlice = createSlice({
         },
         setError: (state,action) => {
             state.Error = action.payload;
-        },
-        setSuccess: (state,action) => {
-            state.Success = action.payload;
         },
         setServicios: (state,action) => {
             state.Servicios = action.payload;

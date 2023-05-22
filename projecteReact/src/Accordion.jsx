@@ -1,3 +1,4 @@
+import './citas2.css';
 const Accordion = ({ title, children, index, openIndex, setOpenIndex }) => {
   const isOpen = index === openIndex;
 
@@ -6,7 +7,7 @@ const Accordion = ({ title, children, index, openIndex, setOpenIndex }) => {
   }
 
   return (
-    <div className="accordion-wrap">
+    <div className="accordion-wrap card">
       <div className={`accordion-header ${isOpen ? 'accordion-gold' : ''}`} onClick={toggleAccordion}>
         <div className="card-header" id="headingOne">
             <h2 className="mb-0">

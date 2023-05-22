@@ -49,12 +49,8 @@ h2{font-size:2rem;}
 .collapse:not(.show){display:none;}
 .card{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem;}
 .card-body{-ms-flex:1 1 auto;flex:1 1 auto;min-height:1px;padding:1.25rem;}
-.card-header{padding:.75rem 1.25rem;margin-bottom:0;background-color:rgba(0,0,0,.03);border-bottom:1px solid rgba(0,0,0,.125);}
+.card-header{padding:.75rem 1.25rem;margin-bottom:0;background-color:rgba(0,0,0,.03);}
 .card-header:first-child{border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;}
-.accordion>.card{overflow:hidden;}
-.accordion>.card:not(:last-of-type){border-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0;}
-.accordion>.card:not(:first-of-type){border-top-left-radius:0;border-top-right-radius:0;}
-.accordion>.card>.card-header{border-radius:0;margin-bottom:-1px;}
 .align-items-center{-ms-flex-align:center!important;align-items:center!important;}
 .float-right{float:right!important;}
 .h-100{height:100%!important;}
@@ -81,3 +77,4 @@ a[type="button"]{-webkit-appearance:none!important;-moz-appearance:none!importan
 .active{color:white!important;background-color:#78F3E2!important;}
 .btnBooking{border:0px solid!important;color:#ffffff!important;background-color:#78F3E2!important;}
 .btnBooking:hover{color:#78F3E2!important;background-color:white!important;}
+.divCita2{margin: auto 18%;}

@@ -1,4 +1,4 @@
-import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setSuccess, setServicios, setTrabajadores, setHorasOcupadas } from "./citaSlice";
+import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setServicios, setTrabajadores, setHorasOcupadas } from "./citaSlice";
 const CONTENT_TYPE_JSON = "application/json";
 
 export const crearCita = (id, navigate) => {
@@ -17,7 +17,6 @@ export const crearCita = (id, navigate) => {
                 ID_Cliente: id
             };
         }
-        console.log(cita)
         try{
             const data = await fetch("http://equip11.insjoaquimmir.cat/api/reservas", {
             headers: {
@@ -32,7 +31,7 @@ export const crearCita = (id, navigate) => {
             if (resposta.success == true) {
                 console.log("Cita Creada Satisfactoriamente");
                 alert("La cita se ha creado correctamente");
-                dispatch(setPage(0))
+                dispatch(reiniciarCitas());
                 navigate("/");
             }else{
                 dispatch(setError(resposta.message));
@@ -59,9 +58,10 @@ export const reiniciarCitas = () => {
         dispatch(setFecha(""));
         dispatch(setEmail(""));
         dispatch(setTelefono(""));
-        dispatch(setIDTrabajador(""));
-        dispatch(setIDCliente(""));
-        dispatch(setIDServicio(""));
+        dispatch(setIDCliente(null));
+        dispatch(setIDTrabajador(null));
+        dispatch(setIDServicio(null));
+        dispatch(setError(null));
         dispatch(setPage(0));
     };
 }
