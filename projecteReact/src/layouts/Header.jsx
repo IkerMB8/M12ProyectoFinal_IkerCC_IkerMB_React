@@ -18,8 +18,18 @@ export default function Header() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+  
   useEffect(() => {
+    var btnDropdown = document.getElementById("button-menu");
+    var dropdown = document.getElementById("mobile-dropdown");
+    btnDropdown.addEventListener("click", function () {
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    });
+
     const openModalBtn = document.getElementById("openModalBtn");
     const modal = document.getElementById("exampleModal");
     const closeBtn = document.getElementsByClassName("close")[0];
@@ -101,7 +111,18 @@ export default function Header() {
         </div>
         <div className="right">
           <div id="site-navigation-wrap" className="clr">
-            <nav id="site-navigation" className="navigation main-navigation clr" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
+            <nav id="site-navigation" className="navigation main-navigation clr menumvl" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
+              <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
+                <li className="menu-item">
+                  <Link to="" className="menu-link" id='button-menu'>
+                    <i className="bi bi-plus-square-fill"> Menu</i> 
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div id="site-navigation-wrap" className="clr">
+            <nav id="site-navigation" className="navigation main-navigation clr menupc" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement" role="navigation">
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
                 <li className="menu-item">
                   <Link to="/#Equipo" className="menu-link">
@@ -170,8 +191,8 @@ export default function Header() {
                     </span>
                   </Link>
                   {authToken ? (
-                  <ul class="submenu">
-                    <li><button onClick={(e) => {logout(e);}}><i class="bi bi-door-open-fill"></i></button></li>
+                  <ul className="submenu">
+                    <li><button onClick={(e) => {logout(e);}}><i className="bi bi-door-open-fill"></i></button></li>
                   </ul>
                   ) : ( <></>)}
                 </li>
@@ -180,6 +201,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      
       <div className="modal" id="exampleModal">
         <div className="modal-content">
             <div className='modal-header'>
@@ -231,6 +253,22 @@ export default function Header() {
             )}
         </div>
       </div>
+      <div id="mobile-dropdown" className="clr" style={{boxSizing: "border-box"}}>
+				<nav className="clr has-social" itemScope="itemscope" itemType="https://schema.org/SiteNavigationElement">
+					<ul id="menu-principal-1" className="menu">
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-504"><Link to="/#Equipo">El Equipo</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-667"><Link to="/#Servicios">Servicios</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><Link to="/#Salon">El Salón</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><Link to="/#Premios">Premios</Link></li>
+						<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><Link to="/#Colecciones">Colecciones</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/#CHR">CHR Academy</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/feed">Feed</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/citas">Citas</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/productos">Produtos</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><Link to="/#Contacto">Contacta</Link></li>
+					</ul>
+				</nav>
+			</div>
     </header>
   );
 }
