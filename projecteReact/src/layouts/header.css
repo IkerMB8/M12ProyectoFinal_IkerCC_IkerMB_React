@@ -240,6 +240,20 @@ a:hover{color:#d5cdc0;}
     justify-content: center;
     align-items: center;
 }
+.cart-badge-mvl {
+    position: absolute;
+    top: 6px;
+    left: 55px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .modal {
     display: none;
     position: fixed;
@@ -334,12 +348,23 @@ body.modal-open {overflow: hidden;}
 .menumvl{
     display: none;
 }
+
+@media (min-width: 1160px) {
+    #mobile-dropdown{
+        display: none !important;
+    }
+}
 @media (max-width: 1160px) {
     .menupc{
         display: none;
     }
     .menumvl{
         display: block;
+    }
+}
+@media (max-width: 680px) {
+    .modal-content{
+        width: 300px;
     }
 }
 .right a.icon {

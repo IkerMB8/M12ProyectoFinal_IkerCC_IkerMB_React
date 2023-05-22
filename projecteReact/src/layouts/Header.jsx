@@ -22,6 +22,13 @@ export default function Header() {
   useEffect(() => {
     var btnDropdown = document.getElementById("button-menu");
     var dropdown = document.getElementById("mobile-dropdown");
+    const navbarItems = dropdown.querySelectorAll('a');
+
+    navbarItems.forEach(item => {
+      item.addEventListener('click', () => {
+        dropdown.style.display = "none";
+      });
+    });
     btnDropdown.addEventListener("click", function () {
       if (dropdown.style.display === "block") {
         dropdown.style.display = "none";
@@ -30,26 +37,39 @@ export default function Header() {
       }
     });
 
-    const openModalBtn = document.getElementById("openModalBtn");
+    const openModalBtn1 = document.getElementById("openModalBtn1");
+    const openModalBtn2 = document.getElementById("openModalBtn2");
     const modal = document.getElementById("exampleModal");
     const closeBtn = document.getElementsByClassName("close")[0];
     const bodyElement = document.getElementsByTagName("body")[0];
 
-    openModalBtn.addEventListener("click", function () {
-      modal.style.display = "block";
-      bodyElement.classList.add("modal-open");
+    openModalBtn1.addEventListener("click", function () {
+      abrirModal();
+    });
+
+    openModalBtn2.addEventListener("click", function () {
+      abrirModal();
     });
 
     closeBtn.addEventListener("click", function () {
-      modal.style.display = "none";
-      bodyElement.classList.remove("modal-open");
+      cerrarModal();
     });
 
     window.addEventListener("click", function (event) {
       if (event.target === modal) {
-        modal.style.display = "none";
+        cerrarModal();
       }
     });
+
+    function abrirModal() {
+      modal.style.display = "block";
+      bodyElement.classList.add("modal-open");
+    }
+
+    function cerrarModal() {
+      modal.style.display = "none";
+      bodyElement.classList.remove("modal-open");
+    }
   }, []);
 
   useEffect(() => {
@@ -115,7 +135,7 @@ export default function Header() {
               <ul id="menu-principal" className="main-menu dropdown-menu sf-menu">
                 <li className="menu-item">
                   <Link className="menu-link" id='button-menu'>
-                    <i className="bi bi-plus-square-fill"> Menu</i> 
+                    <i className="bi bi-list"> Menu</i> 
                   </Link>
                 </li>
               </ul>
@@ -175,7 +195,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <a className="menu-link" type="button" id="openModalBtn">
+                  <a className="menu-link" type="button" id="openModalBtn1">
                     <span>
                       <i className="bi bi-cart-fill" />
                     </span>
@@ -266,6 +286,15 @@ export default function Header() {
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/citas">Citas</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/productos">Produtos</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><Link to="/#Contacto">Contacta</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
+              <a className="menu-link" type="button" id="openModalBtn2">
+                <i className="bi bi-cart-fill" />
+                {productsCount > 0 && (
+                  <span className="cart-badge-mvl">{productsCount}</span>
+                )}
+              </a>
+            </li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><Link to="/cuenta"><i className="bi bi-person-fill" /></Link></li>
 					</ul>
 				</nav>
 			</div>
