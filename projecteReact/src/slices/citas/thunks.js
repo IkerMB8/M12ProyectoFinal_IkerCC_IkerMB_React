@@ -1,4 +1,5 @@
 import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDServicio, setPage, setError, setServicios, setTrabajadores, setHorasOcupadas } from "./citaSlice";
+import Swal from 'sweetalert';
 const CONTENT_TYPE_JSON = "application/json";
 
 export const crearCita = (id, navigate) => {
@@ -30,7 +31,7 @@ export const crearCita = (id, navigate) => {
             const resposta = await data.json();
             if (resposta.success == true) {
                 console.log("Cita Creada Satisfactoriamente");
-                alert("La cita se ha creado correctamente");
+                Swal("Success","La cita se ha creado correctamente", "success");
                 dispatch(reiniciarCitas());
                 navigate("/");
             }else{

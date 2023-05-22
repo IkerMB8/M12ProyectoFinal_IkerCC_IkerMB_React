@@ -1,6 +1,7 @@
 import './contacta.css';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert';
 
 export default function Contacta() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -16,14 +17,14 @@ export default function Contacta() {
       });
 
       if (response.ok) {
-        alert('Mensaje enviado correctamente');
+        Swal('','Mensaje enviado correctamente','success');
         reset();
       } else {
         throw new Error('Error al enviar el mensaje');
       }
     } catch (error) {
       console.error(error);
-      alert('Error al enviar el mensaje');
+      Swal('Error','Error al enviar el mensaje','error');
     }
   };
 

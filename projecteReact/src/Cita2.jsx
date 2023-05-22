@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { UserContext } from "./userContext";
 import { useContext } from "react";
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert';
 
 export default function Cita2() {
     let { idCliente } = useContext(UserContext);
@@ -78,7 +79,7 @@ export default function Cita2() {
 
     const handleConfirmarClick = () => {
         if (Fecha === null || Fecha === "") {
-            alert('Por favor, selecciona una fecha.')
+            Swal("Error",'Por favor, selecciona una fecha.', "error")
             return;
         }
 
