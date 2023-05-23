@@ -1,7 +1,7 @@
 
-import Revlon from "/productos/ColorSilkHairColorRevlon/revlon.png";
-import RevlonLongWearCreamColor from "/productos/LongwearCreamColor/revlonColorStay.png";
-import UniqOneHairTreatment from "/productos/UniqOneHairTreatment/RevlonUniqOneHairTreatment-.png";
+import Revlon from "/imgproductos/ColorSilkHairColorRevlon/revlon.png";
+import RevlonLongWearCreamColor from "/imgproductos/LongwearCreamColor/revlonColorStay.png";
+import UniqOneHairTreatment from "/imgproductos/UniqOneHairTreatment/RevlonUniqOneHairTreatment-.png";
 
 const arrayProducts = [
   {

@@ -77,4 +77,4 @@ a[type="button"]{-webkit-appearance:none!important;-moz-appearance:none!importan
 .active{color:white!important;background-color:#78F3E2!important;}
 .btnBooking{border:0px solid!important;color:#ffffff!important;background-color:#78F3E2!important;}
 .btnBooking:hover{color:#78F3E2!important;background-color:white!important;}
-.divCita2{margin: auto 18%;}
+.divCita2{margin: auto 18%;height: 77.5%;}
