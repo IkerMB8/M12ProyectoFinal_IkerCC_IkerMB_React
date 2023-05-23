@@ -345,3 +345,12 @@ svg.load path,
 svg.load rect{
   fill: black;
 }
+
+@media only screen and (max-width: 751px)  {
+	.formlogreg{
+		max-width: 400px;
+	}
+	.imagenLogo{
+		display: none;
+	}
+}
