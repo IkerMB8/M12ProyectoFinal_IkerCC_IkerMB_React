@@ -26,8 +26,6 @@ export default function Home() {
             <Premios></Premios>
             <Colecciones></Colecciones>
             <CHRAcademy></CHRAcademy>
-            {/* <Feed></Feed> */}
-            {/* <Citas></Citas> */}
             <Contacta></Contacta>
         </>
     )

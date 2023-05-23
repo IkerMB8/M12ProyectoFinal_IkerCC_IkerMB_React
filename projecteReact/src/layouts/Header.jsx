@@ -175,11 +175,6 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/feed" className="menu-link">
-                    <span>Feed</span>
-                  </Link>
-                </li>
-                <li className="menu-item">
                   <Link to="/citas" className="menu-link">
                     <span>Citas</span>
                   </Link>
@@ -282,9 +277,8 @@ export default function Header() {
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><Link to="/#Premios">Premios</Link></li>
 						<li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><Link to="/#Colecciones">Colecciones</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/#CHR">CHR Academy</Link></li>
-						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/feed">Feed</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/citas">Citas</Link></li>
-						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/productos">Produtos</Link></li>
+						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><Link to="/productos">Productos</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><Link to="/#Contacto">Contacta</Link></li>
 						<li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190">
               <a className="menu-link" type="button" id="openModalBtn2">
