@@ -2,7 +2,7 @@ import { setFecha, setEmail, setTelefono, setIDCliente, setIDTrabajador, setIDSe
 import Swal from 'sweetalert';
 const CONTENT_TYPE_JSON = "application/json";
 
-export const crearCita = (id, navigate) => {
+export const crearCita = (id, navigate, authToken) => {
     return async (dispatch, getState) => {
         const { Fecha, Email, Telefono, ID_Trabajador, ID_Servicio } = getState().citas;
         let cita = {
@@ -68,12 +68,13 @@ export const reiniciarCitas = () => {
 }
 
 
-export const getServicios = () => {
+export const getServicios = (authToken) => {
     return async (dispatch, getState) => {
         try{
             const data = await fetch("http://equip11.insjoaquimmir.cat/api/servicios", {
                 headers: {
-                    'Accept': CONTENT_TYPE_JSON
+                    'Accept': CONTENT_TYPE_JSON,
+                    "Authorization": 'Bearer ' + authToken,
                 },
                 method: "GET"
             })
@@ -89,12 +90,13 @@ export const getServicios = () => {
     };
 }
 
-export const getTrabajadores = () => {
+export const getTrabajadores = (authToken) => {
     return async (dispatch, getState) => {
         try{
             const data = await fetch("http://equip11.insjoaquimmir.cat/api/trabajadores", {
                 headers: {
-                    'Accept': CONTENT_TYPE_JSON
+                    'Accept': CONTENT_TYPE_JSON,
+                    "Authorization": 'Bearer ' + authToken,
                 },
                 method: "GET"
             })
