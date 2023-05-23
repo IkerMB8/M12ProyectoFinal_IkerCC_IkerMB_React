@@ -6,7 +6,7 @@ import useRegister from "../hooks/useRegister";
 import { useForm } from "react-hook-form";
 
 export default function Register({ setCanvi }) {
-  const { doRegister } = useRegister();
+  const { doRegister, error } = useRegister();
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data) => doRegister(data);
 
@@ -128,6 +128,7 @@ export default function Register({ setCanvi }) {
             </form>
           </div>
         </div>
+        {error ? <div className="error">{error}</div> : <></>}
       </div>
     </>
   );

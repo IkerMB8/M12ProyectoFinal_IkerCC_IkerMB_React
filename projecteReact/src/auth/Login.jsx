@@ -62,6 +62,7 @@ export default function Login({setCanvi}) {
                         </div>
                     </form>
                 </div>
+                {error ? <div className="error">{error}</div> : <></>}
             </div>
                 
             </div>

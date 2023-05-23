@@ -43,7 +43,6 @@ export default function App() {
                 <Route path='*' element={<NotFound />} />
                 <Route path="/" element={<Home></Home>} />
                 <Route path='/feed' element={<></>} />
-                <Route path='/cart' element={<></>} />
                 <Route path='/citas' element={<><Citas/></>} />
                 <Route path='/colecciones' element={<Colecciones></Colecciones>} />
                 <Route path='/salon' element={<Salon></Salon>} />
