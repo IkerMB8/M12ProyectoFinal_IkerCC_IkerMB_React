@@ -61,8 +61,8 @@ export default function Login({setCanvi}) {
                             <p>¿No tienes cuenta? <a href="#" onClick={() => {setCanvi(false);}} > Regístrate</a></p>
                         </div>
                     </form>
+                    {error ? <div className="error" style={{height:"auto"}}>{error}</div> : <></>}
                 </div>
-                {error ? <div className="error">{error}</div> : <></>}
             </div>
                 
             </div>

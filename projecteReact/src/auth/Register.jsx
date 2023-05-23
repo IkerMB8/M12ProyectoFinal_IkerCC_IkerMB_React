@@ -126,9 +126,9 @@ export default function Register({ setCanvi }) {
                 </p>
               </div>
             </form>
+            {error ? <div className="error" style={{height:"auto"}}>{error}</div> : <></>}
           </div>
         </div>
-        {error ? <div className="error">{error}</div> : <></>}
       </div>
     </>
   );
