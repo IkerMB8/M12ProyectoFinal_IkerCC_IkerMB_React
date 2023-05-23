@@ -10,6 +10,7 @@ import Premios from "./Premios";
 import NotFound from "./NotFound";
 import Contacta from "./Contacta";
 import Citas from "./Citas";
+import Feed from "./Feed";
 import Success from "./pages/Success";
 import Cancel from "./pages/Cancel";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -42,7 +43,7 @@ export default function App() {
               <Routes>
                 <Route path='*' element={<NotFound />} />
                 <Route path="/" element={<Home></Home>} />
-                <Route path='/feed' element={<></>} />
+                <Route path='/feed' element={<><Feed /></>} />
                 <Route path='/cart' element={<></>} />
                 <Route path='/citas' element={<><Citas/></>} />
                 <Route path='/colecciones' element={<Colecciones></Colecciones>} />
