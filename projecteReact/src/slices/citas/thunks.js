@@ -68,13 +68,12 @@ export const reiniciarCitas = () => {
 }
 
 
-export const getServicios = (authToken) => {
+export const getServicios = () => {
     return async (dispatch, getState) => {
         try{
             const data = await fetch("http://equip11.insjoaquimmir.cat/api/servicios", {
                 headers: {
-                    'Accept': CONTENT_TYPE_JSON,
-                    "Authorization": 'Bearer ' + authToken,
+                    'Accept': CONTENT_TYPE_JSON
                 },
                 method: "GET"
             })
@@ -90,13 +89,12 @@ export const getServicios = (authToken) => {
     };
 }
 
-export const getTrabajadores = (authToken) => {
+export const getTrabajadores = () => {
     return async (dispatch, getState) => {
         try{
             const data = await fetch("http://equip11.insjoaquimmir.cat/api/trabajadores", {
                 headers: {
-                    'Accept': CONTENT_TYPE_JSON,
-                    "Authorization": 'Bearer ' + authToken,
+                    'Accept': CONTENT_TYPE_JSON
                 },
                 method: "GET"
             })

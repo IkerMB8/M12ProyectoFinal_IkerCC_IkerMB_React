@@ -29,8 +29,8 @@ export default function App() {
   let [idCliente, setIdCliente] = useState("");
   const dispatch = useDispatch();
   useEffect(()=>{
-    dispatch(getServicios(authToken));
-    dispatch(getTrabajadores(authToken));
+    dispatch(getServicios());
+    dispatch(getTrabajadores());
   }, []);
 
   return (
