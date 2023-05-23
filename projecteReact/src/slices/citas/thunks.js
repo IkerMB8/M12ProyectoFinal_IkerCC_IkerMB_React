@@ -122,9 +122,10 @@ export const getCitas = () => {
             const resposta = await data.json();
             console.log(resposta);
             if (resposta.success === true) {
-                const fechasReservas = resposta.data.map((reserva) => reserva.Fecha);
+                const fechasReservas = resposta.data
+                .filter((reserva) => reserva.ID_Trabajador == getState().citas.ID_Trabajador)
+                .map((reserva) => reserva.Fecha);
                 dispatch(setHorasOcupadas(fechasReservas));
-                console.log(fechasReservas);
             } else {
                 console.log(resposta.message);
             }
