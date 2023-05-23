@@ -147,7 +147,7 @@ export default function Account() {
                                         </div>
                                     </div>
 
-                                    <div className='datos' id='citas'>
+                                    <div className='datosHistCit' id='citas'>
                                         <h2>Historial de Citas</h2>
                                         {isLoading2 ? (
                                             <></>

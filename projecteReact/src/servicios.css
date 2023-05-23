@@ -76,7 +76,7 @@
     color: #fff;
 }
 
-@media only screen and (max-width: 410px)  {
+@media only screen and (max-width: 620px)  {
     .bg_serv{
         display: block;
         padding: 15px;
@@ -141,6 +141,13 @@
 
     .img_Servicios{
         height: 375px;
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 410px)  {
+    .img_Servicios{
+        height: 375px;
         width: 81%;
     }
-  }
+}
